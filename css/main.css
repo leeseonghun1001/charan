@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS 영역 분할 연결 */
+@import url("a1_header.css");
+@import url("b1_visual.css");
+@import url("c1_category.css");
+@import url("d1_informaiton1.css");
+@import url("e1_product1.css");
+@import url("f1_informaiton2.css");
+@import url("g1_product2.css");
+@import url("h1_new.css");
+@import url("i1_footer.css");
+/* 변수 CSS 연결 */
+@import url("variable.css");
+/* 반응형 CSS 연결 */
+@import url("responsible.css");
+/* font 연결 */
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--font-color-black);
+}

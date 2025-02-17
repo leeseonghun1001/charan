@@ -1,0 +1,37 @@
+@charset "utf-8";
+:root {
+  /* 색상 */
+  --main-color: #6630e4;
+  --sub1-color: #ff23a2;
+  --sub2-color: #b69fff;
+  --sub3-color: #c495f8;
+  --sub3-color: #efefef;
+
+  /* background-color */
+  --bg-color-gray: #d9d9d9;
+
+  /* 폰트사이즈 */
+  --font-size-Min: 12px;
+  --font-size-S: 14px;
+  --font-size-base: 16px;
+  --font-size-M: 20px;
+  --font-size-L: 24px;
+  --font-size-XL: 28px;
+  --font-size-Max: 32px;
+
+  /* 폰트색상 */
+  --font-color-black: #262627;
+  --font-color-gray: #757575;
+
+  /* 간격 */
+  --spacing-S: 8px;
+  --spacing-M: 16px;
+  --spacing-L: 24px;
+  --spacing-XL: 32px;
+
+  /* 입력필드 */
+  --input-bg: #d9d9d9;
+  --input-border: 1px solid rgba(38, 38, 39, 0.35);
+  --input-focus-border: #262627;
+  --input-border-radius: 10%;
+}
