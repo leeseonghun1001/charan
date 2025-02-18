@@ -7,7 +7,7 @@
 /* informaition1 : 홍보1 영역 */
 .information1 {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
 }
 /* 인포 백 그라운드 */
@@ -19,14 +19,70 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../images/info-bg.png") no-repeat center;
+  background: url("../images/info_bg.png") no-repeat center;
   background-size: cover;
   z-index: -1;
 }
 
 /* 인포 안 이너 컨테이너 */
-.info1_inner .container {
-  max-width: 1200px;
-  background-color: bisque;
+.info1_inner {
+  height: 100%;
   position: relative;
+}
+/* 인포1 이너 안 큰 박스 */
+.info1-top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* 인포1 왼족 텍스트 박스 */
+.left-text_box {
+  position: relative;
+  width: 30%;
+  flex: 1;
+}
+/* 인포1 왼쪽 텍스트 박스 안 텍스트 한줄 표현 */
+.left-text-box-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-XL);
+  position: relative;
+}
+.info1-text {
+  font-size: var(--font-size-Max);
+  color: var(--font-color-white);
+  font-weight: bold;
+}
+/* 1번째 문장 */
+.info1-text {
+  display: inline-block;
+}
+/* 한글자씩 애니메이션 텍스트 박스 */
+.left-text-box-bt {
+  display: inline-block;
+  margin-top: var(--spacing-XL);
+  width: 100%;
+  font-size: var(--font-size-Max);
+  font-weight: 200;
+  color: var(--font-color-white);
+}
+/* 한글자씩 애니메이션 표현 */
+/* 인포1 오른쪽 텍스트 박스 */
+.right-detail-box {
+  flex: 2;
+  width: 70%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+/* 인포1 오른족 박스 안 아이콘 박스 */
+[class^="detail"] {
+  width: calc(100% / 4 - 15px);
+  height: 100%;
+  background-color: burlywood;
+  text-align: center;
 }
