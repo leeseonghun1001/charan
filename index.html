@@ -33,10 +33,14 @@
     <!-- CSS 연결 -->
     <!-- reset CSS 연결 -->
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- AOS CSS 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Link Swiper's CSS 연결 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- 통합 CSS 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- AOS JS 연결 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jquery 연결 -->
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/script.js"></script>
@@ -104,6 +108,7 @@
         <div class="header-bottom">
           <div class="h-categoty">
             <div class="h-c-text">
+
               <a>CATEGORY</a>
               <img src="images/menu-bar.png" alt="메뉴바" />
               <div class="menu-snb">
@@ -190,6 +195,7 @@
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
 
@@ -223,51 +229,53 @@
             <!-- 인포1 왼쪽 텍스트 박스 -->
             <div class="left-text_box">
               <!-- 한줄 애니메이션 텍스트 박스 -->
-              <h2>
-                <span class="info1-text">중고 옷 구매,</span>
-                <span class="info1-text">망설여지시나요?</span>
-                <span class="info1-text">부디,</span>
-                <!-- 한글자씩 애니메이션 텍스트 박스 -->
-                <span>
-                  <span class="num0">차</span>
-                  <span class="num1">란</span>
-                  <span class="num2">에</span>
-                  <span class="num3">서</span>
-                </span>
-                <!-- 바로가기 아이콘 -->
-                <!-- 인포1 오른쪽 텍스트 박스 -->
-                <ul class="right-detail-box">
-                  <li class="detail-1">
-                    <!-- 디테일 첫번째 아이콘 -->
-                    <figure><img src="images/info1-icon1.png" alt="아이콘1" /></figure>
-                    <span>고객만족도</span>
-                    <p><strong class="upText upText2">4.9</strong></p>
-                    <span>차란은<br />무료배송, 무료반품!</span>
-                  </li>
-                  <li class="detail-2">
-                    <!-- 디테일 두번째 아이콘 -->
-                    <figure><img src="images/info1-icon-2.png" alt="아이콘2" /></figure>
-                    <span>누적구매수</span>
-                    <p><strong class="upText" data-rate="9,862"></strong></p>
-                    <span>섬세한 검수,<br />살균소독!</span>
-                  </li>
-                  <li class="detail-3">
-                    <!-- 디테일 세번째 아이콘 -->
-                    <figure><img src="images/info1-icon3.png" alt="아이콘3" /></figure>
-                    <span>차란 최다 판매 고객</span>
-                    <p>약<strong class="upText" data-rate="1,500"></strong>만원</p>
-                    <span>잠자고 있는 옷으로,<br />수익과 기부를 동시에.</span>
-                  </li>
-                  <li class="detail-4">
-                    <!-- 디테일 네번쨰 아이콘 -->
-                    <figure><img src="images/info1-icon4.png" alt="아이콘4" /></figure>
-                    <span>SPA부터</span>
-                    <p>약<strong class="upText" data-rate="3,747"></strong>개</p>
-                    <span>프리미엄<br />브랜드를 만나보세요</span>
-                  </li>
-                </ul>
-              </h2>
+              <div class="left-text-box-top">
+                <span class="info1-text first" data-aos="fade-right" data-aos-duration="500">중고 옷 구매,</span>
+                <span class="info1-text second" data-aos="fade-right" data-aos-duration="1000">망설여지시나요?</span>
+                <span class="info1-text third" data-aos="fade-right" data-aos-duration="1500">부디,</span>
+              </div>
+
+              <!-- 한글자씩 애니메이션 텍스트 박스 -->
+              <span class="left-text-box-bt">
+                <span class="num0">차</span>
+                <span class="num1">란</span>
+                <span class="num2">에</span>
+                <span class="num3">서</span>
+              </span>
             </div>
+            <!-- 바로가기 아이콘 -->
+            <!-- 추가 삽입 -->
+            <!-- 인포1 오른쪽 텍스트 박스 -->
+            <ul class="right-detail-box">
+              <li class="detail-1">
+                <!-- 디테일 첫번째 아이콘 -->
+                <figure><img src="images/info1-icon1.png" alt="아이콘1" /></figure>
+                <span>고객만족도</span>
+                <p><strong class="upText upText2">4.9</strong></p>
+                <span>차란은<br />무료배송, 무료반품!</span>
+              </li>
+              <li class="detail-2">
+                <!-- 디테일 두번째 아이콘 -->
+                <figure><img src="images/info1-icon-2.png" alt="아이콘2" /></figure>
+                <span>누적구매수</span>
+                <p><strong class="upText" data-rate="9,862"></strong></p>
+                <span>섬세한 검수,<br />살균소독!</span>
+              </li>
+              <li class="detail-3">
+                <!-- 디테일 세번째 아이콘 -->
+                <figure><img src="images/info1-icon3.png" alt="아이콘3" /></figure>
+                <span>차란 최다 판매 고객</span>
+                <p>약<strong class="upText" data-rate="1,500"></strong>만원</p>
+                <span>잠자고 있는 옷으로,<br />수익과 기부를 동시에.</span>
+              </li>
+              <li class="detail-4">
+                <!-- 디테일 네번쨰 아이콘 -->
+                <figure><img src="images/info1-icon4.png" alt="아이콘4" /></figure>
+                <span>SPA부터</span>
+                <p>약<strong class="upText" data-rate="3,747"></strong>개</p>
+                <span>프리미엄<br />브랜드를 만나보세요</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -275,8 +283,58 @@
       <section class="product1"></section>
       <!-- information2 : 홍보2 영역 -->
       <section class="information2">
-        <div class="info2-bg"></div>
-        <div class="info2_inner"></div>
+
+
+        <div class="info2_inner container">
+          <div class="info2-whole-box">
+            <!-- ☆★인포2 왼쪽 텍스트 영역★☆ -->
+             <div class="info2-left-box">
+              <p class="info2-left-box-p">
+                <span>옷장 속</span>
+                <span>안 입는 옷,</span>
+                <span>쌓아두고</span>
+                <span>계신가요?</span>
+              </p>
+             </div>
+             <!-- ☆★인포2 오른쪽 영역★☆ -->
+              <div class="info2-right-box">
+                <!-- 인포2 오른쪽 아이콘 + 텍스트 영역 -->
+                 <div class="info2-right-i-t-box">
+                   <!-- 인포2 오른쪽 아이콘 영역 -->
+                    <ul class="info2-right-icons">
+                     <li><img src="images/info2-icon1.png" alt="아이콘2-1" /></li>
+                     <li><img src="images/info2-icon2.png" alt="아이콘2-2" /></li>
+                     <li><img src="images/info2-icon3.png" alt="아이콘2-3" /></li>
+                    </ul>
+                   <!-- 인포2 오른쪽 텍스트 영역 -->
+                   <ul class="info2-right-texts">
+                     <li>
+                       <p><span>1. 돈 되는 옷장정리</span><span>손 쉽게 시작하세요!</span></p>
+                     </li>
+                     <li>
+                       <p><span>2. 안 입는 옷, 모아서</span><span>문 밖에 내놓으면 끝!</span></p>
+                     </li>
+                     <li>
+                       <p><span>3. 위탁 판매 뿐만 아니라</span><span>kg 판매와 기부까지!</span></p>
+                     </li>
+                   </ul>
+                 </div>
+                <!-- 인포2 오른쪽 이미지 영역 -->
+                <ul class="info2-right-images">
+                  <li class="info2-right-image1">
+                    <img src="images/info2-img1.png" alt="이미지2-1">
+                  </li>
+                  <li class="info2-right-image2">
+                    <img src="images/info2-img2.png" alt="이미지2-2">
+                  </li>
+                  <li class="info2-right-image3">
+                    <img src="images/info2-img3.png" alt="이미지2-3">
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
       </section>
       <!-- product2 : MDPick 영역 -->
       <section class="product2"></section>

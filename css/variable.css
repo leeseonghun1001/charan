@@ -17,11 +17,13 @@
   --font-size-M: 20px;
   --font-size-L: 24px;
   --font-size-XL: 28px;
-  --font-size-Max: 32px;
+  --font-size-XXL: 32px;
+  --font-size-Max: 40px;
 
   /* 폰트색상 */
   --font-color-black: #262627;
   --font-color-gray: #757575;
+  --font-color-white: #fff;
 
   /* 간격 */
   --spacing-S: 5px;
