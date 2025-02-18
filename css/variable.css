@@ -24,10 +24,12 @@
   --font-color-gray: #757575;
 
   /* 간격 */
-  --spacing-S: 8px;
-  --spacing-M: 16px;
-  --spacing-L: 24px;
-  --spacing-XL: 32px;
+  --spacing-S: 5px;
+  --spacing-M: 10px;
+  --spacing-L: 15px;
+  --spacing-XL: 20px;
+  --spacing-XXL: 30px;
+  --spacing-XXXL: 40px;
 
   /* 입력필드 */
   --input-bg: #d9d9d9;
