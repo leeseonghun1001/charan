@@ -2,27 +2,55 @@
 @media screen and(max-width:1850px){
     .header-bottom{
         margin-left: 50px;
+        gap: 60px
     }
 }
 @media screen and (max-width: 1750px){
     .header-bottom{
         margin-left: var(--spacing-L);
+        gap: 60px
     }
 }
 @media screen and (max-width: 1500px){
     .header-bottom{
         margin-left: var(--spacing-M);
+        gap: 60px
     }
 }
 @media screen and (max-width: 1200px){
     .header-bottom{
-        gap: 40px;
+        gap: 30px;
     }
     .menu{
-        width: 80%;
+        width: 85%;
+    }
+    .gnb{
+        margin-left: 0;
     }
     .gnb li{
         width: calc(100% / 6);
+    }
+    .gnb li a{
+        padding: var(--spacing-L) var(--spacing-S);
+    }
+}
+@media screen and (max-width: 1100px){
+    .depth > li > a{
+        font-size: var(--font-size-S);
+    }
+}
+@media screen and (max-width: 950px){
+    .header-bottom{
+        gap: 20px;
+    }
+    .gnb{
+        margin-left: 0;
+    }
+    .gnb li a{
+        padding: var(--spacing-L) var(--spacing-S);
+    }
+    .depth > li > a{
+        font-size: var(--font-size-Min);
     }
 }
 @media screen and (max-width: 768px) {
