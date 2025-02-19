@@ -23,7 +23,7 @@
   width: 10%;
   min-width: 130px;
   padding: var(--spacing-M);
-  margin-right: var(--spacing-XL);
+  margin-left: var(--spacing-XL);
 }
 .logo img {
   width: 100%;
@@ -109,9 +109,11 @@
   margin-top: var(--spacing-M);
   margin-bottom: var(--spacing-M);
   padding: 0 var(--spacing-M);
+  border-right: 2px solid rgba(38, 38, 39, .2);
 }
 #util-list li:last-child {
   padding-right: 0;
+  border: none;
 }
 #util-list li a {
   color: #757575;
@@ -136,6 +138,10 @@
   align-items: center;
   gap: var(--spacing-S);
 }
+.h-c-text > a{
+  color: var(--font-color-gray);
+  font-weight: bold;
+}
 .menu-snb{
     width: 98%;
     max-width: 1700px;
@@ -144,28 +150,36 @@
     top: 50px;
     left: 0;
     z-index: 99;
+    
 }
 
 .snb {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--sub2-color);
+  height: 400px;
+  background-color: #fff;
+  padding: 20px 0;
 }
 .snb > li {
   width: 100%;
+  height: 100%;
   display: flex;
+  
   /* background-color: aqua; */
 }
+
 .snb > li > a {
   width: 150px;
   display: block;
   padding: var(--spacing-M);
   /* text-align: center; */
-  background-color: rgba(102, 48, 228, 1);
-  color: #fff;
+  /* background-color: var(--sub2-color); */
+  color: var(--main-color);
   font-weight: bold;
+  border-right: 1px solid rgba(38, 38, 39, .2);
 }
+
 .snb > li:hover > a{
     text-decoration: underline;
     color: #262627;
@@ -175,17 +189,23 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  margin-left: var(--spacing-XXL);
 }
 .depth > li {
   width: calc(100% / 10);
 }
 .depth > li > a{
-    color: #fff;
+  display: block;
+  padding: 15px 0;
+  color: var( --font-color-gray);
+  font-size: var(--font-size-S);
+  
     
 }
 .depth > li:hover > a{
     text-decoration: underline;
-    color: #262627;
+    color: var(--main-color);
+    font-weight: bold;
 }
 /* gnb 설정 */
 .menu {
@@ -214,4 +234,10 @@
   padding: var(--spacing-XL);
   font-size: var(--font-size-base);
   font-weight: 900;
+}
+.gnb li:last-child a{
+  color: var(--main-color);
+}
+.gnb li:nth-child(5) a{
+  color: var(--sub1-color);
 }
