@@ -7,7 +7,7 @@
 /* informaition1 : 홍보1 영역 */
 .information1 {
   width: 100%;
-  height: 400px;
+  height: 680px;
   position: relative;
 }
 /* 인포 백 그라운드 */
@@ -83,6 +83,55 @@
 [class^="detail"] {
   width: calc(100% / 4 - 15px);
   height: 100%;
-  background-color: burlywood;
   text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* 디테일 안 모든 요소들 텍스트 스타일 */
+  color: var(--font-color-white);
+  font-size: 19px;
+}
+/* 아이콘 박스 옆 보더 선 */
+[class^="detail"]::after {
+  content: "";
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 193px;
+}
+.detail-4::after {
+  display: none;
+}
+/* 오른쪽 개별 박스 */
+[class^="detail"] * {
+  /* display: block;
+  padding: 5px; */
+}
+[class^="detail"] figure {
+  width: 60%;
+  /* margin: auto; */
+}
+[class^="detail"] figure img {
+  width: 100%;
+}
+/* 인포 오른쪽 개별  */
+[class^="detail"]:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* 호버 시 배경색들 */
+.detail-1:hover {
+  background-color: #ff5a7a;
+}
+.detail-2:hover {
+  background-color: #1a75ba;
+}
+.detail-3:hover {
+  background-color: #8e72d2;
+}
+.detail-4:hover {
+  background-color: #2fc784;
 }
