@@ -1,23 +1,27 @@
 @charset "utf-8";
 @media screen and(max-width:1850px){
+    /* header 영역 */
     .header-bottom{
         margin-left: 50px;
         gap: 60px
     }
 }
 @media screen and (max-width: 1750px){
+    /* header 영역 */
     .header-bottom{
         margin-left: var(--spacing-L);
         gap: 60px
     }
 }
 @media screen and (max-width: 1500px){
+    /* header 영역 */
     .header-bottom{
         margin-left: var(--spacing-M);
         gap: 60px
     }
 }
 @media screen and (max-width: 1200px){
+    /* header 영역 */
     .header-bottom{
         gap: 30px;
     }
@@ -33,13 +37,30 @@
     .gnb li a{
         padding: var(--spacing-L) var(--spacing-S);
     }
+    /* visual 영역 */
+    .banner{
+        display: block;
+        
+    }
+    .banner-left{
+        width: 100%;
+        padding: 0 var(--spacing-M);
+        
+    }
+    .banner-right{
+        display: none;
+        /* gap: 5px; */
+    }
 }
 @media screen and (max-width: 1100px){
+    /* header 영역 */
     .depth > li > a{
         font-size: var(--font-size-S);
     }
+    /* visual 영역 */
 }
 @media screen and (max-width: 950px){
+    /* header 영역 */
     .header-bottom{
         gap: 20px;
     }
@@ -52,8 +73,32 @@
     .depth > li > a{
         font-size: var(--font-size-Min);
     }
+    /* visual 영역 */
+    /* category 영역 */
+    .icon-box{
+        width: 75%;
+        /* information1 영역 */
+    }
 }
 @media screen and (max-width: 768px) {
+    /* header 영역 */
+    /* visual 영역 */
+    /* category 영역 */
+    /* information1 영역 */
+    /* product1 영역 */
+    /* information2 영역 */
+    /* product2 영역 */
+    /* news 영역 */
+    /* footer 영역 */
 }
 @media screen and (max-width: 390px) {
+     /* header 영역 */
+    /* visual 영역 */
+    /* category 영역 */
+    /* information1 영역 */
+    /* product1 영역 */
+    /* information2 영역 */
+    /* product2 영역 */
+    /* news 영역 */
+    /* footer 영역 */
 }
