@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css 연결 -->
-     <link rel="stylesheet" href="css/popup.css">
-     <!-- js 연결 -->
-      <script src="js/popup.js"></script>
+    <!-- 폰트어썸 연결 -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    
     <title>차란</title>
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/popup.css">
+    <!-- Hammer.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <!-- js 연결 -->
+     <script src="js/popup.js"></script>
 </head>
 <body>
-    
+  <div class="wrap">
+      <div class="tinder">
+          <div class="tinder--status">
+            <i class="fa fa-remove"></i>
+            <i class="fa fa-heart"></i>
+          </div>
+        
+          <div class="tinder--cards">
+            <div class="tinder--card">
+              <img src="images/MD-pick-img1.png">
+             
+            </div>
+            <div class="tinder--card">
+              <img src="images/MD-pick-img2.png">
+              
+            </div>
+            <div class="tinder--card">
+              <img src="images/MD-pick-img3.png">
+              
+            </div>
+            <div class="tinder--card">
+              <img src="images/MD-pick-img4.png">
+              
+            </div>
+            <div class="tinder--card">
+              <img src="images/MD-pick-img5.png">
+              
+            </div>
+          </div>
+        
+          <div class="tinder--buttons">
+            <button id="nope"><i class="fa fa-remove"></i></button>
+            <button id="love"><i class="fa fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
