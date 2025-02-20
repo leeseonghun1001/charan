@@ -1,12 +1,244 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/l_product.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 파비콘 연결 -->
+    <link rel="stylesheet" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="stylesheet" href="css/l_product.css" />
+    <link rel="stylesheet" href="css/a1_header.css" />
+    <title>차란 - 상품 상세페이지</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- 상단 탑 -->
+      <div class="header-top">
+        <div class="logo">
+          <img src="images/logo.png" alt="차란로고" />
+        </div>
+        <div class="header-right">
+          <!-- 상단 탑 오른쪽 위 -->
+          <div class="h-r-top">
+            <!-- 검색창 -->
+            <div class="search-bar">
+              <input type="text" id="search-input" placeholder="#차란이 처음이라면?_차란속에서 취향 찾기" />
+              <div class="search-icon">
+                <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+              </div>
+            </div>
+            <!-- 위시/마이페이지/옷장정리신청/장바구니 -->
+            <div class="header-icon">
+              <ul class="header-icon-list">
+                <li>
+                  <a href="#"><img src="images/wish-icon.png" alt="wish" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/mypage-icon.png" alt="마이페이지" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/shopping-icon.png" alt="장바구니" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/apply-icon.png" alt="옷장정리신청" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 상단 탑 오른쪽 아래 -->
+          <div class="h-r-bottom">
+            <!-- login & mypage -->
+            <div class="util">
+              <ul id="util-list">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 상단 아래쪽 -->
+
+      <div class="header-bottom">
+        <!-- 로고 및 카테고리 -->
+        <div class="h-categoty">
+          <div class="h-c-text">
+            <a>CATEGORY</a>
+            <img src="images/menu-bar.png" alt="메뉴바" />
+            <!-- snb-depth -->
+            <div class="menu-snb">
+              <!-- depth -->
+              <ul class="snb">
+                <li>
+                  <a href="#">아우터</a>
+                  <ul class="depth">
+                    <li><a href="#">코트</a></li>
+                    <li><a href="#">점퍼</a></li>
+                    <li><a href="#">패딩</a></li>
+                    <li><a href="#">플리스조끼</a></li>
+                    <li><a href="#">플리스재킷</a></li>
+                    <li><a href="#">무스탕</a></li>
+                    <li><a href="#">트위드재킷</a></li>
+                    <li><a href="#">라이더재킷</a></li>
+                    <li><a href="#">집업</a></li>
+                    <li><a href="#">가디건</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">상의</a>
+                  <ul class="depth">
+                    <li><a href="#">상의 신상</a></li>
+                    <li><a href="#">맨투맨</a></li>
+                    <li><a href="#">후드티</a></li>
+                    <li><a href="#">긴팔티</a></li>
+                    <li><a href="#">셔츠</a></li>
+                    <li><a href="#">니트</a></li>
+                    <li><a href="#">폴라니트</a></li>
+                    <li><a href="#">니트조끼</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">원피스/세트</a>
+                  <ul class="depth">
+                    <li><a href="#">원피스/세트 신상</a></li>
+                    <li><a href="#">겨울 원피스</a></li>
+                    <li><a href="#">미니원피스</a></li>
+                    <li><a href="#">미디원피스</a></li>
+                    <li><a href="#">롱원피스</a></li>
+                    <li><a href="#">투피스/세트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">팬츠</a>
+                  <ul class="depth">
+                    <li><a href="#">팬츠 신상</a></li>
+                    <li><a href="#">데님팬츠</a></li>
+                    <li><a href="#">캐주얼팬츠</a></li>
+                    <li><a href="#">트레이닝팬츠</a></li>
+                    <li><a href="#">조거팬츠</a></li>
+                    <li><a href="#">레깅스</a></li>
+                    <li><a href="#">슬랙스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">스커트</a>
+                  <ul class="depth">
+                    <li><a href="#">스커트 신상</a></li>
+                    <li><a href="#">겨울스커트</a></li>
+                    <li><a href="#">미니스커트</a></li>
+                    <li><a href="#">미디스커트</a></li>
+                    <li><a href="#">롱스커트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">가방</a>
+                  <ul class="depth">
+                    <li><a href="#">가방 신상</a></li>
+                    <li><a href="#">숄더백</a></li>
+                    <li><a href="#">핸드백</a></li>
+                    <li><a href="#">백팩</a></li>
+                    <li><a href="#">지갑</a></li>
+                    <li><a href="#">기타 지갑</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">패션소품</a>
+                  <ul class="depth">
+                    <li><a href="#">소품 신상</a></li>
+                    <li><a href="#">모자</a></li>
+                    <li><a href="#">머플러</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 배너 위 메뉴 -->
+        <nav class="menu">
+          <ul class="gnb">
+            <li><a href="#">신규혜택</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">택포함</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">#취향찾기</a></li>
+            <li><a href="#">♥옷장정리</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 상세페이지 -->
+    <div class="product-wrap">
+        <!-- 왼쪽 이미지 영역 -->
+      <div class="product-image-box">
+        <div class="pro-image-top">
+          <img src="images/product-image1.png" alt="상품설명이미지1" />
+        </div>
+        <div class="pro-image-bottom">
+            <p class="bold">상품 상태</p>
+            <div class="pro-image-bottom-sub">
+                <p class="bold very-good">Very-good</p>
+                <span>착용 횟수가 많지 않고, 잘 관리한 아이템이에요. 아주 좋은 상태로 볼 수 있지만,
+                    착용 시 생기는 미세한 사용감이 있어요.</span>
+            </div>
+        </div>
+      </div>
+      <!-- 오른쪽 가격 영역 -->
+      <div class="product-price-box">
+        <!-- 오른쪽 가격 영역 탑 -->
+        <div class="pro-price-top">
+            <!-- 타이틀 -->
+            <h1>Brandy Melville Knit Sweater with American Flag Cream</h1>
+            <h2>브랜드 멜빌 아메리칸 플러그 니트 스웨터 크림</h2>
+            <!-- 가격 -->
+            <div class="pro-num-box">
+                <p>224,500</p>
+                <div class="pro-num-flex">
+                    <span class="price-per">64%</span>
+                    <span>80,000</span>
+                    <span class="coupon">쿠폰받기</span>
+                </div>
+            </div>
+            <!-- 버튼 -->
+            <div class="pro-btn-box">
+                <sapn class="buy">구매</sapn>
+                <span class="sell">판매</span>
+                <p class="heart"><img src="images/wish-icon.png" alt="하트아이콘">관심상품 268</p>
+            </div>
+            <!-- 배송정보 -->
+            <div class="pro-delivery-box">
+                <p class="bold">배송정보</p>
+                <p class="delivery-top">
+                    <span class="bold">배송비</span>
+                    <span>무료배송</span>
+                </p>
+                <p class="delivery-bottom">
+                    <span class="bold">출고 정보</span>
+                    <span>검수 후 배송 / 5-7일 내 도착 예상</span>
+                </p>
+            </div>
+        </div>
+        <!-- 오른쪽 가격 영역 바텀 - 그 외 정보 -->
+        <div class="pro-price-bottom">
+            <p>
+                <span class="bold">100% 정품 보증</span>
+                <span>CHARAN에서 검수한 상품이 정품이 아닐 경우, 구매가의 3배를 보상합니다.</span>
+            </p>
+            <p>
+                <span class="bold">엄격한 다중 검수</span>
+                <span>모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룸의 체계적인 시스템을 거쳐 검수를 진행합니다.</span>
+            </p>
+            <p>
+                <span class="bold">정품 인증 패키지</span>
+                <span>검수에 합격한 경우에 한하여 CHARAN의 정품 인증 패키지가 포함된 상품이 배송됩니다.</span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

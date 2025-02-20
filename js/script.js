@@ -7,5 +7,12 @@ $(document).ready(function () {
     function () {
     $(".menu-snb").stop().slideUp();
     }
+    
+  );
+  $("#mb-menu").click(
+    function () {
+      $(".mb-menu-snb").stop().slideToggle();
+    }
+   
   );
 });

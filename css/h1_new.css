@@ -35,10 +35,21 @@
     font-weight: bold;
 }
 .news-text p{
-    
+    color: var(--font-color-black);
+    line-height: 1.5;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .news-text span{
     display: block;
     text-align: right;
     color: var(--main-color)
+}
+.new-bottom img{
+    width: 100%;
+    display: block;
 }

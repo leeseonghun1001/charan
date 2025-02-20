@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url("variable.css");
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:var(--font-color-black);
+}
+body{
+  font-family: 'S-CoreDream-3Light';
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 상세페이지 */
+.product-wrap{
+  /* background-color: aqua; */
+  position: relative;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 70px;
+  font-size: 12px;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* 왼쪽 이미지 영역 */
+.product-image-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-XXXL);
+}
+.pro-image-top{
+  position: relative;
+  width: 100%;
+}
+.pro-image-top img{
+  width: 100%;
+}
+.pro-image-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-XXL);
+}
+.pro-image-bottom-sub{
+  display: flex;
+}
+.very-good{
+width: 30%;
+}
+
+
+/* 오른쪽 가격 영역 */
+.product-price-box{
+  flex: 1;
+}
+.pro-price-top h1{
+  font-size: var(--font-size-M);
+  margin-bottom: 3px;
+}
+.pro-price-top h2{
+  font-size: var(--font-size-base);
+}
+.pro-num-box > p{
+  color: var(--font-color-gray);
+  text-decoration: line-through;
+  font-size: var(--font-size-M);
+  margin-top: 80px;
+  /* font-weight: bold; */
+}
+.pro-num-flex{
+  display: flex;
+  gap: 25px;
+  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: bold;
+}
+.pro-num-flex .price-per{
+  color: var(--sub1-color);
+}
+.pro-num-flex .coupon{
+  background-color: var(--sub4-color);
+  color: var(--main-color);
+  margin-left: auto;
+  font-size: var(--font-size-L);
+  font-weight: bold;
+  line-height: 60px;
+  border-radius: 10px;
+  width: 190px;
+  text-align: center;
+}
