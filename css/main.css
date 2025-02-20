@@ -13,6 +13,7 @@
 @import url("variable.css");
 /* 반응형 CSS 연결 */
 @import url("responsible.css");
+
 /* font 연결 */
 @font-face {
     font-family: 'S-CoreDream-3Light';
