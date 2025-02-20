@@ -81,6 +81,10 @@
               <!-- 위시/마이페이지/옷장정리신청/장바구니 -->
               <div class="header-icon">
                 <ul class="header-icon-list">
+
+                  <li>
+                    <a href="#"><img src="images/mb_search.png" alt="search" /></a>
+                  </li>
                   <li>
                     <a href="#"><img src="images/wish-icon.png" alt="wish" /></a>
                   </li>
@@ -92,6 +96,12 @@
                   </li>
                   <li>
                     <a href="#"><img src="images/apply-icon.png" alt="옷장정리신청" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mb_wish.png" alt="모바일 위시" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mb_menu.png" alt="모바일 메뉴" id="mb-menu"/></a>
                   </li>
                 </ul>
               </div>
@@ -150,14 +160,14 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">원피스/세트</a>
+                    <a href="#">원피스</a>
                     <ul class="depth">
-                      <li><a href="#">원피스/세트 신상</a></li>
+                      <li><a href="#">원피스신상</a></li>
                       <li><a href="#">겨울 원피스</a></li>
                       <li><a href="#">미니원피스</a></li>
                       <li><a href="#">미디원피스</a></li>
                       <li><a href="#">롱원피스</a></li>
-                      <li><a href="#">투피스/세트</a></li>
+                      <li><a href="#">투피스</a></li>
                     </ul>
                   </li>
                   <li>
@@ -205,6 +215,12 @@
               </div>
             </div>
           </div>
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="# 차란속에서 취향 찾기" />
+            <div class="search-icon">
+              <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+            </div>
+          </div>
           <!-- 배너 위 메뉴 -->
           <nav class="menu">
             <ul class="gnb">
@@ -216,6 +232,100 @@
               <li><a href="#">♥옷장정리</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="mb-menu-snb">
+          <!-- depth -->
+          <ul class="snb">
+            <li>
+              <a href="#">아우터</a>
+              <ul class="depth">
+                <li><a href="#">코트</a></li>
+                <li><a href="#">점퍼</a></li>
+                <li><a href="#">패딩</a></li>
+                <li><a href="#">플리스조끼</a></li>
+                <li><a href="#">플리스재킷</a></li>
+                <li><a href="#">무스탕</a></li>
+                <li><a href="#">트위드재킷</a></li>
+                <li><a href="#">라이더재킷</a></li>
+                <li><a href="#">집업</a></li>
+                <li><a href="#">가디건</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상의</a>
+              <ul class="depth">
+                <li><a href="#">상의 신상</a></li>
+                <li><a href="#">맨투맨</a></li>
+                <li><a href="#">후드티</a></li>
+                <li><a href="#">긴팔티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+                <li><a href="#">폴라니트</a></li>
+                <li><a href="#">니트조끼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">원피스</a>
+              <ul class="depth">
+                <li><a href="#">원피스신상</a></li>
+                <li><a href="#">겨울 원피스</a></li>
+                <li><a href="#">미니원피스</a></li>
+                <li><a href="#">미디원피스</a></li>
+                <li><a href="#">롱원피스</a></li>
+                <li><a href="#">투피스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="depth">
+                <li><a href="#">팬츠 신상</a></li>
+                <li><a href="#">데님팬츠</a></li>
+                <li><a href="#">캐주얼팬츠</a></li>
+                <li><a href="#">트레이닝팬츠</a></li>
+                <li><a href="#">조거팬츠</a></li>
+                <li><a href="#">레깅스</a></li>
+                <li><a href="#">슬랙스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스커트</a>
+              <ul class="depth">
+                <li><a href="#">스커트 신상</a></li>
+                <li><a href="#">겨울스커트</a></li>
+                <li><a href="#">미니스커트</a></li>
+                <li><a href="#">미디스커트</a></li>
+                <li><a href="#">롱스커트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">가방</a>
+              <ul class="depth">
+                <li><a href="#">가방 신상</a></li>
+                <li><a href="#">숄더백</a></li>
+                <li><a href="#">핸드백</a></li>
+                <li><a href="#">백팩</a></li>
+                <li><a href="#">지갑</a></li>
+                <li><a href="#">기타 지갑</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">패션소품</a>
+              <ul class="depth">
+                <li><a href="#">소품 신상</a></li>
+                <li><a href="#">모자</a></li>
+                <li><a href="#">머플러</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">마이페이지</a>
+              <ul class="depth" id="my-info">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </header>
       <!-- 비주얼 -->
@@ -586,13 +696,28 @@
               <!-- 인포2 오른쪽 이미지 영역 -->
               <ul class="info2-right-images">
                 <li class="info2-right-image1">
-                  <img src="images/info2-img1.png" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine" alt="이미지2-1" />
+                  <img
+                    src="images/info2-img1.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-1" />
                 </li>
                 <li class="info2-right-image2">
-                  <img src="images/info2-img2.png" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine" alt="이미지2-2" />
+                  <img
+                    src="images/info2-img2.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-2" />
                 </li>
                 <li class="info2-right-image3">
-                  <img src="images/info2-img3.png" data-aos="fade-right" data-aos-duration="1400" data-aos-easing="ease-in-sine" alt="이미지2-3" />
+                  <img
+                    src="images/info2-img3.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1400"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-3" />
                 </li>
               </ul>
             </div>
@@ -609,7 +734,7 @@
               <p>MD들이 추천하는 여러가지 스타일링 룩!</p>
             </div>
             <!-- pro2 하단 이미지 영역 -->
-             <div class="pro2-image-box">
+            <div class="pro2-image-box">
               <div class="swiper itemSwiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -653,7 +778,7 @@
                   </div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -666,72 +791,78 @@
             </div>
             <div class="news-article">
               <ul>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img1.png" alt="뉴스이미지1">
-                    <span>조선경제</span>
-                  </div>
-                  <div class="news-text">
-                    <p>세컨핸드 시장에서 ‘제2의 쿠팡’ 후보로
-                      떠오른 차란</p>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img1.png" alt="뉴스이미지1" />
+                      <span>조선경제</span>
+                    </div>
+                    <div class="news-text">
+                      <p>세컨핸드 시장에서 ‘제2의 쿠팡’ 후보로 떠오른 차란</p>
                       <span>2025.01.13</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img2.png" alt="뉴스이미지2">
-                    <span>이데일리</span>
-                  </div>
-                  <div class="news-text">
-                    <p>가방 · 머플러 중고거래도 차란으로..마인이스, 잡화 카테고리 론칭</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img2.png" alt="뉴스이미지2" />
+                      <span>이데일리</span>
+                    </div>
+                    <div class="news-text">
+                      <p>가방 · 머플러 중고거래도 차란으로..마인이스, 잡화 카테고리 론칭</p>
                       <span>2024.12.03</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img3.png" alt="뉴스이미지3">
-                    <span>테넌트뉴스</span>
-                  </div>
-                  <div class="news-text">
-                    <p>패션리커마스 앱 ‘차란’..iOS 무료 쇼핑앱
-                      1위 달성</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img3.png" alt="뉴스이미지3" />
+                      <span>테넌트뉴스</span>
+                    </div>
+                    <div class="news-text">
+                      <p>패션리커마스 앱 ‘차란’..iOS 무료 쇼핑앱 1위 달성</p>
                       <span>2024.10.21</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img4.png" alt="뉴스이미지4">
-                    <span>한경</span>
-                  </div>
-                  <div class="news-text">
-                    <p>“Ai로 중고의류 맞춤 추천.. 수거부터
-                      판매까지 한 번에”</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img4.png" alt="뉴스이미지4" />
+                      <span>한경</span>
+                    </div>
+                    <div class="news-text">
+                      <p>“Ai로 중고의류 맞춤 추천.. 수거부터 판매까지 한 번에”</p>
                       <span>2024.10.14</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img5.png" alt="뉴스이미지5">
-                    <span>머니투데이</span>
-                  </div>
-                  <div class="news-text">
-                    <p>패션 리커마스 ‘차란’, 포브스 ‘아시아 
-                      100대 유망기업’ 선정</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img5.png" alt="뉴스이미지5" />
+                      <span>머니투데이</span>
+                    </div>
+                    <div class="news-text">
+                      <p>패션 리커마스 ‘차란’, 포브스 ‘아시아 100대 유망기업’ 선정</p>
                       <span>2024.08.28</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img6.png" alt="뉴스이미지6">
-                    <span>매일경제</span>
-                  </div>
-                  <div class="news-text">
-                    <p>[박지훈 기자의 非상장기업 원석 찾기]
-                      마인이스 l 가품 걱정없는 패션 리셀
-                      플랫폼 ‘차란’</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img6.png" alt="뉴스이미지6" />
+                      <span>매일경제</span>
+                    </div>
+                    <div class="news-text">
+                      <p>[박지훈 기자의 非상장기업 원석 찾기] 마인이스 l 가품 걱정없는 패션 리셀 플랫폼 ‘차란’</p>
                       <span>2024.06.18</span>
-                  </div>
-                </a></li>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
