@@ -1,1 +1,163 @@
-@charset "utf-8";
+/* font 연결 */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 공통 css 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color-black);
+}
+body {
+  font-family: "S-CoreDream-3Light";
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* 로그인 전체 레이아웃 */
+.login-wrap {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.login-bar {
+  width: 100%;
+  background-color: aqua;
+  height: 135px;
+}
+/* 로그인바 안 로그인 title */
+.login-bar h1 {
+  text-align: center;
+  line-height: 135px;
+  font-size: var(--font-size-Max);
+  color: var(--font-color-black);
+  font-weight: bold;
+}
+/* 로그인 레이아웃 이너 */
+.login-ineer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 로그인메인 */
+/* 로그인 상단 하단 바텀 레이아웃 공통 */
+.login-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+/* 로그인 상단 레이아웃 */
+.login-input-section {
+  justify-content: space-around;
+}
+/* 로그인 상단 - 왼쪽 레이아웃 */
+.login-top-left {
+  position: relative;
+  margin-top: 80px;
+  /* background-color: aqua; */
+  flex: 2;
+}
+/* 왼쪽 레이아웃 인풋 폼박스 */
+/* 공통 퐁 적용 css */
+.insert-form {
+  padding: var(--spacing-L);
+}
+.insert-form label {
+  font-weight: 100;
+  cursor: pointer;
+}
+.insert-form input {
+  width: 420px;
+  height: 40px;
+  background-color: var(--bg-color-gray);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+/* 인풋 안 플레이스롤더 스타일 */
+iput:placeholder {
+  color: var(--font-color-black);
+  font-family: "S-CoreDream-3Light";
+  font-size: var(--font-size-base);
+}
+#pw-insert {
+  margin-left: 54px;
+}
+/* 아이디 저장하기 */
+.email-store {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  left: 130px;
+  top: 135px;
+}
+/* 아이디 저장하기 - 아이콘 */
+.email-store span:first-child {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.email-store span:first-child a {
+  width: 100%;
+}
+.email-store span:first-child a img {
+  width: 100%;
+}
+
+/* 아이디 저장하기 - 텍스트 부분 */
+.email-store span:last-child {
+  font-size: 14px;
+  font-weight: 0;
+  line-height: 28px;
+  margin-left: 30px;
+}
+
+/* 로그인 상단 - 오른쪽 레이아웃 */
+.login-top-right {
+  position: relative;
+  margin-top: 80px;
+  flex: 1;
+}
+/* 로그인 상단 - 오른쪽 레이아웃 버튼 */
+.login-right-bt{
+  display: block;
+  background-color: var(--sub2-color);
+  width: 190px;
+  height: 100px;
+  border-radius: 10px;
+
+
+
+
+}
+
+/* 로그인 두번째 상단 */
+.sns-join-section {
+  justify-content: space-around;
+}
+/* 로그인 두번째 섹션 오른쪽 이멜가입하기 sns */
+.sns-join-section {
+  display: flex;
+  flex-direction: column;
+}
+

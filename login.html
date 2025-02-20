@@ -1,13 +1,314 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/k_login.css">
-    <title>Document</title>
-    
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/k_login.css" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- header css -->
+    <link rel="stylesheet" href="css/a1_header.css" />
+    <!-- footer css -->
+    <link rel="stylesheet" href="css/i1_footer.css" />
+    <!-- resposive css -->
+    <link rel="stylesheet" href="css/responsible.css" />
+    <!-- root css -->
+    <link rel="stylesheet" href="css/variable.css" />
+    <!-- login css -->
+    <link rel="stylesheet" href="css/k_login.css" />
+    <!-- login js -->
+    <script src="js/login.js"></script>
+    <title>로그인 상세 페이지</title>
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- 상단 -->
+
+      <header class="header">
+        <!-- 상단 탑 -->
+        <div class="header-top">
+          <div class="logo">
+            <img src="images/logo.png" alt="차란로고" />
+          </div>
+          <div class="header-right">
+            <!-- 상단 탑 오른쪽 위 -->
+            <div class="h-r-top">
+              <!-- 검색창 -->
+              <div class="search-bar">
+                <input type="text" id="search-input" placeholder="#차란이 처음이라면?_차란속에서 취향 찾기" />
+                <div class="search-icon">
+                  <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+                </div>
+              </div>
+              <!-- 위시/마이페이지/옷장정리신청/장바구니 -->
+              <div class="header-icon">
+                <ul class="header-icon-list">
+                  <li>
+                    <a href="#"><img src="images/wish-icon.png" alt="wish" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mypage-icon.png" alt="마이페이지" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/shopping-icon.png" alt="장바구니" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/apply-icon.png" alt="옷장정리신청" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 상단 탑 오른쪽 아래 -->
+            <div class="h-r-bottom">
+              <!-- login & mypage -->
+              <div class="util">
+                <ul id="util-list">
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">마이페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 상단 아래쪽 -->
+
+        <div class="header-bottom">
+          <!-- 로고 및 카테고리 -->
+          <div class="h-categoty">
+            <div class="h-c-text">
+              <a>CATEGORY</a>
+              <img src="images/menu-bar.png" alt="메뉴바" />
+              <!-- snb-depth -->
+              <div class="menu-snb">
+                <!-- depth -->
+                <ul class="snb">
+                  <li>
+                    <a href="#">아우터</a>
+                    <ul class="depth">
+                      <li><a href="#">코트</a></li>
+                      <li><a href="#">점퍼</a></li>
+                      <li><a href="#">패딩</a></li>
+                      <li><a href="#">플리스조끼</a></li>
+                      <li><a href="#">플리스재킷</a></li>
+                      <li><a href="#">무스탕</a></li>
+                      <li><a href="#">트위드재킷</a></li>
+                      <li><a href="#">라이더재킷</a></li>
+                      <li><a href="#">집업</a></li>
+                      <li><a href="#">가디건</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">상의</a>
+                    <ul class="depth">
+                      <li><a href="#">상의 신상</a></li>
+                      <li><a href="#">맨투맨</a></li>
+                      <li><a href="#">후드티</a></li>
+                      <li><a href="#">긴팔티</a></li>
+                      <li><a href="#">셔츠</a></li>
+                      <li><a href="#">니트</a></li>
+                      <li><a href="#">폴라니트</a></li>
+                      <li><a href="#">니트조끼</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">원피스/세트</a>
+                    <ul class="depth">
+                      <li><a href="#">원피스/세트 신상</a></li>
+                      <li><a href="#">겨울 원피스</a></li>
+                      <li><a href="#">미니원피스</a></li>
+                      <li><a href="#">미디원피스</a></li>
+                      <li><a href="#">롱원피스</a></li>
+                      <li><a href="#">투피스/세트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">팬츠</a>
+                    <ul class="depth">
+                      <li><a href="#">팬츠 신상</a></li>
+                      <li><a href="#">데님팬츠</a></li>
+                      <li><a href="#">캐주얼팬츠</a></li>
+                      <li><a href="#">트레이닝팬츠</a></li>
+                      <li><a href="#">조거팬츠</a></li>
+                      <li><a href="#">레깅스</a></li>
+                      <li><a href="#">슬랙스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">스커트</a>
+                    <ul class="depth">
+                      <li><a href="#">스커트 신상</a></li>
+                      <li><a href="#">겨울스커트</a></li>
+                      <li><a href="#">미니스커트</a></li>
+                      <li><a href="#">미디스커트</a></li>
+                      <li><a href="#">롱스커트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">가방</a>
+                    <ul class="depth">
+                      <li><a href="#">가방 신상</a></li>
+                      <li><a href="#">숄더백</a></li>
+                      <li><a href="#">핸드백</a></li>
+                      <li><a href="#">백팩</a></li>
+                      <li><a href="#">지갑</a></li>
+                      <li><a href="#">기타 지갑</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">패션소품</a>
+                    <ul class="depth">
+                      <li><a href="#">소품 신상</a></li>
+                      <li><a href="#">모자</a></li>
+                      <li><a href="#">머플러</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 배너 위 메뉴 -->
+          <nav class="menu">
+            <ul class="gnb">
+              <li><a href="#">신규혜택</a></li>
+              <li><a href="#">NEW</a></li>
+              <li><a href="#">택포함</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">#취향찾기</a></li>
+              <li><a href="#">♥옷장정리</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- 로그인 메인 -->
+      <section class="login-wrap">
+        <!-- 로그인 로고 상단바 -->
+        <div class="login-bar">
+          <h1>LOGIN</h1>
+        </div>
+        <!-- 로그인 메인 이너 -->
+        <div class="login-ineer container">
+          <!-- 상단 로그인 인풋 왼쪽 섹션 -->
+
+          <div class="login-input-section login-section">
+            <!-- 상단 인풋 왼쪽 레이아웃 -->
+            <div class="login-top-left">
+              <!-- 아이디 인풋 -->
+              <form action="#" class="top-form insert-form">
+                <label for="">이메일 아이디</label>
+                <input
+                  type="text"
+                  id="email-insert"
+                  name="email-insert"
+                  placeholder="이메일 아이디를 @까지 정확하게 입력하세요" />
+              </form>
+              <!-- 비밀번호 인풋 -->
+              <form action="#" class="top-bt insert-form">
+                <label for="pw-insert">비밀번호</label>
+                <input
+                  type="text"
+                  id="pw-insert"
+                  name="pw-insert"
+                  placeholder="영문+숫자+특수문자 조합 8~16자리를 입력해주세요." />
+              </form>
+              <!-- 아이디 저장해놓기 -->
+              <div class="email-store">
+                <!-- 저장하기 아이콘 -->
+                <span
+                  ><a href="#"><img src="images/login-store-icon.png" alt="" /></a
+                ></span>
+                <!-- 텍스트 내용 -->
+                <span>이메일 아이디 저장</span>
+              </div>
+            </div>
+            <!-- 상단 인풋 오른쪽 레이아웃 -->
+            <div class="login-top-right">
+              <!-- 로그인 버튼 -->
+              <button class="login-right-bt">로그인</button>
+              <!-- 아이디 , 비밀번호 찾기 -->
+              <span>아이디 찾기</span>
+              <span>비밀번호 찾기</span>
+            </div>
+          </div>
+          <!-- 구분선 ---------------------------------------------------------- -->
+          <br />
+          <!-- 구분선 -------------------------------------------------------------- -->
+          <!-- sns 활용 로그인 섹션 -->
+          <div class="sns-join-section login-section">
+            <!-- sns 활용 박스 왼족 -->
+            <div class="sns-join-left">
+              <p>지금 가입하면 5만원 할인 쿠폰 증정</p>
+              <p>SNS계정으로 차란을 이용해 보세요.</p>
+            </div>
+            <!-- sns 활용 박스 오른족 -->
+            <div class="sns-join-right login-section" id="sns-join-right">
+              <!-- 이메일로 가입하기 버튼 -->
+              <button class="email-login-bt">이메일로 가입하기</button>
+              <!-- 카카오로 가입하기 버튼 -->
+              <button class="kakao-login-bt">
+                <img src="images/login-kakao-icon.png" alt="카카오아이콘" /> 카카오로 시작하기
+              </button>
+              <!-- sns 아이콘 list -->
+              <div class="sns-list">
+                <a href="#"><img src="images/login-sns-insta-icon.png" alt="인스타" /></a>
+                <a href="#"><img src="images/login-sns-fb-icon.png" alt="페이스북" /></a>
+                <a href="#"><img src="images/login-sns-utube-icon.png" alt="유튜브" /></a>
+                <a href="#"><img src="images/login-sns-line-icon.png" alt="라인" /></a>
+                <a href="#"><img src="images/login-sns-tic-icon.png" alt="틱톡" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- 구분선 ------------------------------------------------------- -->
+          <br />
+          <!-- 구분선 ------------------------------------------------------ -->
+          <!-- 비회원 가입섹션 -->
+          <div class="unkown-login-section login-section">
+            <!-- 비회원 가입 버튼 -->
+            <button class="unkown-bt">비회원 주문조회</button>
+          </div>
+        </div>
+      </section>
+      <!-- footer 영역 -->
+      <footer class="footer">
+        <div class="footer_inner">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="차란로고" />
+          </div>
+          <nav class="footer-menu">
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">서비스 이용약관</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+            </ul>
+          </nav>
+          <div class="footer-info">
+            <p class="info-text1">
+              <span>대표자 : 김혜성</span>
+              <span>법인명(상호) : 마인이스 주식회사(Mine.si.lnc)</span>
+            </p>
+            <p class="info-text2">
+              <span>사업자등록번호 : 165-86-02594</span>
+              <span>통신판매업 신고번호 : 제2022-서울성동-00830호</span>
+            </p>
+            <p class="info-text3">
+              <span>주소 : 서울특별시 성동구 성수이로 108, 3층</span>
+              <span>(성수동 2가, 보성빌딩)</span>
+            </p>
+            <p class="info-text4">
+              <span>이메일 : support@mineis.il</span>
+              <span>문의전화 : 02-6013-2201</span>
+            </p>
+            <p class="info-text5">
+              <span>개인정보관리책임자 : 최민기</span>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>copyright ⓒ Mine.is.Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -101,7 +101,7 @@
               <!-- login & mypage -->
               <div class="util">
                 <ul id="util-list">
-                  <li><a href="#">로그인</a></li>
+                  <li><a href="login.html">로그인</a></li>
                   <li><a href="#">회원가입</a></li>
                   <li><a href="#">마이페이지</a></li>
                 </ul>
@@ -463,28 +463,28 @@
                 <!-- 디테일 첫번째 아이콘 -->
                 <figure><img src="images/info1-icon1.png" alt="아이콘1" /></figure>
                 <span>고객만족도</span>
-                <p><strong class="upText" id="UpText-1" data-rate="4.9"></strong></p>
+                <p><strong class="upText" id="UpText-1" data-target="96">96</strong>&nbsp;%</p>
                 <span>차란은<br />무료배송, 무료반품!</span>
               </li>
               <li class="detail-2 detail">
                 <!-- 디테일 두번째 아이콘 -->
                 <figure><img src="images/info1-icon-2.png" alt="아이콘2" /></figure>
                 <span>누적구매수</span>
-                <p><strong class="upText" id="UpText-2" data-rate="9,862"></strong></p>
+                <p><strong class="upText" id="UpText-2" data-target="9862">9862</strong>&nbsp;EA</p>
                 <span>섬세한 검수,<br />살균소독!</span>
               </li>
               <li class="detail-3 detail">
                 <!-- 디테일 세번째 아이콘 -->
                 <figure><img src="images/info1-icon3.png" alt="아이콘3" /></figure>
                 <span>차란 최다 판매 고객</span>
-                <p>약<strong class="upText" id="UpText-3" data-rate="1,500"></strong>만원</p>
+                <p>약&nbsp;<strong class="upText" id="UpText-3" data-target="1500">1500</strong>&nbsp;만원</p>
                 <span>잠자고 있는 옷으로,<br />수익과 기부를 동시에.</span>
               </li>
               <li class="detail-4 detail">
                 <!-- 디테일 네번쨰 아이콘 -->
                 <figure><img src="images/info1-icon4.png" alt="아이콘4" /></figure>
                 <span>SPA부터</span>
-                <p>약<strong class="upText" id="UpText-4" data-rate="3,747"></strong>개</p>
+                <p>약&nbsp;<strong class="upText" id="UpText-4" data-target="3747">3747</strong>&nbsp;개</p>
                 <span>프리미엄<br />브랜드를 만나보세요</span>
               </li>
             </ul>
@@ -586,13 +586,28 @@
               <!-- 인포2 오른쪽 이미지 영역 -->
               <ul class="info2-right-images">
                 <li class="info2-right-image1">
-                  <img src="images/info2-img1.png" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine" alt="이미지2-1" />
+                  <img
+                    src="images/info2-img1.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-1" />
                 </li>
                 <li class="info2-right-image2">
-                  <img src="images/info2-img2.png" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine" alt="이미지2-2" />
+                  <img
+                    src="images/info2-img2.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-2" />
                 </li>
                 <li class="info2-right-image3">
-                  <img src="images/info2-img3.png" data-aos="fade-right" data-aos-duration="1400" data-aos-easing="ease-in-sine" alt="이미지2-3" />
+                  <img
+                    src="images/info2-img3.png"
+                    data-aos="fade-right"
+                    data-aos-duration="1400"
+                    data-aos-easing="ease-in-sine"
+                    alt="이미지2-3" />
                 </li>
               </ul>
             </div>
@@ -609,7 +624,7 @@
               <p>MD들이 추천하는 여러가지 스타일링 룩!</p>
             </div>
             <!-- pro2 하단 이미지 영역 -->
-             <div class="pro2-image-box">
+            <div class="pro2-image-box">
               <div class="swiper itemSwiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -653,7 +668,7 @@
                   </div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -666,72 +681,78 @@
             </div>
             <div class="news-article">
               <ul>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img1.png" alt="뉴스이미지1">
-                    <span>조선경제</span>
-                  </div>
-                  <div class="news-text">
-                    <p>세컨핸드 시장에서 ‘제2의 쿠팡’ 후보로
-                      떠오른 차란</p>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img1.png" alt="뉴스이미지1" />
+                      <span>조선경제</span>
+                    </div>
+                    <div class="news-text">
+                      <p>세컨핸드 시장에서 ‘제2의 쿠팡’ 후보로 떠오른 차란</p>
                       <span>2025.01.13</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img2.png" alt="뉴스이미지2">
-                    <span>이데일리</span>
-                  </div>
-                  <div class="news-text">
-                    <p>가방 · 머플러 중고거래도 차란으로..마인이스, 잡화 카테고리 론칭</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img2.png" alt="뉴스이미지2" />
+                      <span>이데일리</span>
+                    </div>
+                    <div class="news-text">
+                      <p>가방 · 머플러 중고거래도 차란으로..마인이스, 잡화 카테고리 론칭</p>
                       <span>2024.12.03</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img3.png" alt="뉴스이미지3">
-                    <span>테넌트뉴스</span>
-                  </div>
-                  <div class="news-text">
-                    <p>패션리커마스 앱 ‘차란’..iOS 무료 쇼핑앱
-                      1위 달성</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img3.png" alt="뉴스이미지3" />
+                      <span>테넌트뉴스</span>
+                    </div>
+                    <div class="news-text">
+                      <p>패션리커마스 앱 ‘차란’..iOS 무료 쇼핑앱 1위 달성</p>
                       <span>2024.10.21</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img4.png" alt="뉴스이미지4">
-                    <span>한경</span>
-                  </div>
-                  <div class="news-text">
-                    <p>“Ai로 중고의류 맞춤 추천.. 수거부터
-                      판매까지 한 번에”</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img4.png" alt="뉴스이미지4" />
+                      <span>한경</span>
+                    </div>
+                    <div class="news-text">
+                      <p>“Ai로 중고의류 맞춤 추천.. 수거부터 판매까지 한 번에”</p>
                       <span>2024.10.14</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img5.png" alt="뉴스이미지5">
-                    <span>머니투데이</span>
-                  </div>
-                  <div class="news-text">
-                    <p>패션 리커마스 ‘차란’, 포브스 ‘아시아 
-                      100대 유망기업’ 선정</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img5.png" alt="뉴스이미지5" />
+                      <span>머니투데이</span>
+                    </div>
+                    <div class="news-text">
+                      <p>패션 리커마스 ‘차란’, 포브스 ‘아시아 100대 유망기업’ 선정</p>
                       <span>2024.08.28</span>
-                  </div>
-                </a></li>
-                <li><a href="#">
-                  <div class="news-image">
-                    <img src="images/news-img6.png" alt="뉴스이미지6">
-                    <span>매일경제</span>
-                  </div>
-                  <div class="news-text">
-                    <p>[박지훈 기자의 非상장기업 원석 찾기]
-                      마인이스 l 가품 걱정없는 패션 리셀
-                      플랫폼 ‘차란’</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="news-image">
+                      <img src="images/news-img6.png" alt="뉴스이미지6" />
+                      <span>매일경제</span>
+                    </div>
+                    <div class="news-text">
+                      <p>[박지훈 기자의 非상장기업 원석 찾기] 마인이스 l 가품 걱정없는 패션 리셀 플랫폼 ‘차란’</p>
                       <span>2024.06.18</span>
-                  </div>
-                </a></li>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

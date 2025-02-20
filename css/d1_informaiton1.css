@@ -144,7 +144,14 @@
 [class^="detail"] figure img {
   width: 100%;
 }
-.detail-1 > span , .detail-2 > span , 
-.detail-3 > span , .detail-4 > span {
+.detail-1 > span,
+.detail-2 > span,
+.detail-3 > span,
+.detail-4 > span {
   line-height: 20px !important;
+}
+/* 수치 크키 변화 */
+#UpText-1 , #UpText-2 , #UpText-3 , #UpText-4{
+  text-align: center;
+  font-size: 28px;
 }
