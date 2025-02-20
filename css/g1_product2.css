@@ -22,8 +22,3 @@
     color: var(--font-color-gray);
     font-weight: bold;
 }
-/* pro2 하단 이미지 영역 */
-.pro2-image-box ul {
-    display: flex;
-    gap: var(--spacing-XXL);
-}
