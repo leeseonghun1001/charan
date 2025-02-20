@@ -1,5 +1,5 @@
-window.onload = function () {
-  // 윈도우가 다 읽고 마지막에 읽어줘 라는 명령
+window.addEventListener("load" , function(){
+    // 윈도우가 다 읽고 마지막에 읽어줘 라는 명령
   // ↓itemSwiper 코드
   const itemSwiper = new Swiper(".itemSwiper2", {
     // ↑변수 예약 선언문
@@ -27,4 +27,4 @@ window.onload = function () {
       },
     },
   });
-};
+})
