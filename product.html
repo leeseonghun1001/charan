@@ -25,7 +25,7 @@
       <!-- 상단 탑 -->
       <div class="header-top">
         <div class="logo">
-          <img src="images/logo.png" alt="차란로고" />
+          <a href="index.html"><img src="images/logo.png" alt="차란로고" /></a>
         </div>
         <div class="header-right">
           <!-- 상단 탑 오른쪽 위 -->
@@ -41,6 +41,9 @@
             <div class="header-icon">
               <ul class="header-icon-list">
                 <li>
+                  <a href="#"><img src="images/mb_search.png" alt="search" /></a>
+                </li>
+                <li>
                   <a href="#"><img src="images/wish-icon.png" alt="wish" /></a>
                 </li>
                 <li>
@@ -52,6 +55,12 @@
                 <li>
                   <a href="#"><img src="images/apply-icon.png" alt="옷장정리신청" /></a>
                 </li>
+                <li>
+                  <a href="#"><img src="images/mb_wish.png" alt="모바일 위시" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/mb_menu.png" alt="모바일 메뉴" id="mb-menu" /></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -60,9 +69,9 @@
             <!-- login & mypage -->
             <div class="util">
               <ul id="util-list">
-                <li><a href="#">로그인</a></li>
+                <li><a href="login.html">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
-                <li><a href="#">마이페이지</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
               </ul>
             </div>
           </div>
@@ -109,14 +118,14 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#">원피스/세트</a>
+                  <a href="#">원피스</a>
                   <ul class="depth">
-                    <li><a href="#">원피스/세트 신상</a></li>
+                    <li><a href="#">원피스신상</a></li>
                     <li><a href="#">겨울 원피스</a></li>
                     <li><a href="#">미니원피스</a></li>
                     <li><a href="#">미디원피스</a></li>
                     <li><a href="#">롱원피스</a></li>
-                    <li><a href="#">투피스/세트</a></li>
+                    <li><a href="#">투피스</a></li>
                   </ul>
                 </li>
                 <li>
@@ -164,6 +173,12 @@
             </div>
           </div>
         </div>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="# 차란속에서 취향 찾기" />
+          <div class="search-icon">
+            <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+          </div>
+        </div>
         <!-- 배너 위 메뉴 -->
         <nav class="menu">
           <ul class="gnb">
@@ -175,6 +190,101 @@
             <li><a href="#">♥옷장정리</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="mb-menu-snb">
+        <!-- depth -->
+        <ul class="snb">
+          <li>
+            <a href="#">아우터</a>
+            <ul class="depth">
+              <li><a href="#">코트</a></li>
+              <li><a href="#">점퍼</a></li>
+              <li><a href="#">패딩</a></li>
+              <li><a href="#">플리스조끼</a></li>
+              <li><a href="#">플리스재킷</a></li>
+              <li><a href="#">무스탕</a></li>
+              <li><a href="#">트위드재킷</a></li>
+              <li><a href="#">라이더재킷</a></li>
+              <li><a href="#">집업</a></li>
+              <li><a href="#">가디건</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">상의</a>
+            <ul class="depth">
+              <li><a href="#">상의 신상</a></li>
+              <li><a href="#">맨투맨</a></li>
+              <li><a href="#">후드티</a></li>
+              <li><a href="#">긴팔티</a></li>
+              <li><a href="#">셔츠</a></li>
+              <li><a href="#">니트</a></li>
+              <li><a href="#">폴라니트</a></li>
+              <li><a href="#">니트조끼</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">원피스</a>
+            <ul class="depth">
+              <li><a href="#">원피스신상</a></li>
+              <li><a href="#">겨울 원피스</a></li>
+              <li><a href="#">미니원피스</a></li>
+              <li><a href="#">미디원피스</a></li>
+              <li><a href="#">롱원피스</a></li>
+              <li><a href="#">투피스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">팬츠</a>
+            <ul class="depth">
+              <li><a href="#">팬츠 신상</a></li>
+              <li><a href="#">데님팬츠</a></li>
+              <li><a href="#">캐주얼팬츠</a></li>
+              <li><a href="#">트레이닝팬츠</a></li>
+              <li><a href="#">조거팬츠</a></li>
+              <li><a href="#">레깅스</a></li>
+              <li><a href="#">슬랙스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">스커트</a>
+            <ul class="depth">
+              <li><a href="#">스커트 신상</a></li>
+              <li><a href="#">겨울스커트</a></li>
+              <li><a href="#">미니스커트</a></li>
+              <li><a href="#">미디스커트</a></li>
+              <li><a href="#">롱스커트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">가방</a>
+            <ul class="depth">
+              <li><a href="#">가방 신상</a></li>
+              <li><a href="#">숄더백</a></li>
+              <li><a href="#">핸드백</a></li>
+              <li><a href="#">백팩</a></li>
+              <li><a href="#">지갑</a></li>
+              <li><a href="#">기타 지갑</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">패션소품</a>
+            <ul class="depth">
+              <li><a href="#">소품 신상</a></li>
+              <li><a href="#">모자</a></li>
+              <li><a href="#">머플러</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mypage.html">마이페이지</a>
+            <ul class="depth" id="my-info">
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">옷장정리</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </header>
 
