@@ -155,3 +155,94 @@
   text-align: center;
   font-size: 28px;
 }
+/* 반응형 구현 */
+
+@media screen and (max-width: 1400px) {
+  /* 전체 큰 박스 */
+
+  /* 텍스트 박스 */
+  .info1-text {
+    font-size: 1.8em;
+  }
+
+  .left-text-box-top {
+    gap: 1em;
+  }
+  .left-text_box {
+    width: 30%;
+    margin-left: 2rem;
+  }
+
+  .right-detail-box {
+    width: 70%;
+  }
+  /* 한글자씩 */
+  .left-text-box-bt {
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  [class^="detail"] {
+    font-size: 1em;
+  }
+  #UpText-1,
+  #UpText-2,
+  #UpText-3,
+  #UpText-4 {
+    font-size: 1.5em;
+    width: 20%;
+  }
+  [class^="detail"]::after {
+    left: 193px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .right-detail-box {
+    transform: translateX(-10%);
+    margin-right: 2rem;
+  }
+  [class^="detail"] {
+    font-size: 0.9em;
+  }
+  #UpText-1,
+  #UpText-2,
+  #UpText-3,
+  #UpText-4 {
+    font-size: 1.3em;
+    width: 20%;
+  }
+  [class^="detail"]::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .info1-top {
+    flex-direction: column;
+  }
+  .left-text_box {
+    text-align: center;
+    max-height: 250px;
+    margin-top: 2rem;
+  }
+  .right-detail-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    max-height: 180px;
+    width: 80% max-content;
+  }
+  .right-detail-box span {
+    font-size: 0.8rem;
+  }
+
+  .right-detail-box li {
+    justify-content: normal;
+    height: 80%;
+    gap: 4%;
+    max-width: 165px;
+    max-height: 180px;
+  }
+  [class^="detail"] span:last-child {
+    display: none;
+  }
+}
