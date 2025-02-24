@@ -16,176 +16,237 @@
 
 /* font 연결 */
 @font-face {
-    font-family: 'S-CoreDream';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "S-CoreDream";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color:var(--font-color-black);
+a {
+  text-decoration: none;
+  color: var(--font-color-black);
 }
-body{
-    font-family: 'S-CoreDream-3Light';
+body {
+  font-family: "S-CoreDream-3Light";
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* 픽스 바 스타일 시트 */
 /* 플로팅 박스 */
 .floating-box {
-    width: 85%;
-    height: 13%;
-    background-color: #d1c9ea;
-    display: flex;
-    border-radius: 50px;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    /* left: 6.4rem;
+  width: 80%;
+  height: 10%;
+  background-color: #d1c9ea;
+  display: flex;
+  border-radius: 50px;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  /* left: 6.4rem;
     bottom: 1.6rem; */
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: 900;
-    /* https://getcssscan.com/css-box-shadow-examples 참조 */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* 툴바 고정 중앙 */
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 900;
+  /* https://getcssscan.com/css-box-shadow-examples 참조 */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* 툴바 고정 중앙 */
+}
+/* 플로팅 이미지 박스 */
+.floatinf-img {
+  max-width: 189px;
+  width: 15%;
+  height: 15%;
+  position: relative;
+}
+/* 플로팅 이미지 */
+.floatinf-img img {
+  width: 100%;
+  display: block;
+  transform: translate(5%, -80%);
+}
+/* 차란 로고 및 아이콘 */
+.floating-small-img {
+  /* max-width: 180px; */
+  width: 17%;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 18%;
+}
+.floating-small-img span {
+  display: block;
+
+  width: 50%;
+  height: 50%;
+}
+#light-icon {
+  max-width: 58px;
+  width: 50%;
+  transform: translate(55%, -60%);
+}
+#ft-logo {
+  text-align: center;
+  max-width: 105px;
+  width: 100%;
+  height: 100%;
+  transform: translate(2%);
+}
+/*픽스 바 안 텍스트  */
+.floating-txt {
+  transform: translateX(10%);
+  font-size: 1.3em;
+  color: var(--font-color-white);
+}
+.floating-txt span:nth-child(2) {
+  color: #ffff5c;
+  font-weight: bold;
+}
+/* 플로팅 픽스 박스 버튼 */
+.floating-btn {
+  display: block;
+  max-width: 210px;
+  width: 210px;
+  height: 58px;
+  background-color: #ffff5c;
+  border-radius: 50px;
+  border: none;
+  transform: translateX(-10%);
+}
+.floating-btn a {
+  display: block;
+  font-size: 1.4em;
+  color: #b69fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 58px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* 플로팅 바 요술봉 아이콘 */
+
+.floating-btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+  transform: translate(130%, -17%);
+  width: 3rem;
+  height: 2.8333333333rem;
+  background: url(../images/floating-stick-icon.png) no-repeat 0 0 / 100% auto;
+  bottom: 45%;
+  left: 52%;
+  margin-left: 1rem;
+  z-index: 999;
+  pointer-events: none;
+}
+
+/* 픽스바 반응형 */
+@media screen and (max-width: 1680px) {
+  .floating-txt {
+    font-size: 19px;
+    /* transform: translateX(-19%); */
+    transform: translateX(19%);
   }
-  /* 플로팅 이미지 박스 */
-  .floatinf-img {
-    max-width: 189px;
-    width: 15%;
-    height: 15%;
-    position: relative;
+  #ft-logo {
+    transform: translate(21%);
   }
-  /* 플로팅 이미지 */
-  .floatinf-img img {
-    width: 100%;
-    display: block;
-    transform: translate(35%, -80%);
-  }
-  /* 차란 로고 및 아이콘 */
-  .floating-small-img {
-    display: flex;
-    text-align: center;
-  }
+  .floating-btn {
+    max-width: 210px;
+    width: 150px;
+    height: 48px;
+    background-color: #ffff5c;
+    border-radius: 50px;
+    border: none;
+    transform: translateX(-5%);
   .floating-small-img span {
     display: block;
     width: 40%;
     height: 40%;
   }
-  #light-icon {
-    max-width: 100px;
-    width: 60%;
-    transform: translate(30%, -50%);
+}
+
+@media screen and (max-width: 1450px) {
+  .floatinf-img img {
+    transform: translate(2%, -80%);
   }
-  #ft-logo {
-    max-width: 100px;
-    width: 100%;
-  }
-  /*픽스 바 안 텍스트  */
   .floating-txt {
-    transform: translateX(-22%);
-    font-size: 1.25em;
-    color: var(--font-color-white);
+    font-size: 17px;
+    /* transform: translateX(-19%); */
+    transform: translateX(25%);
   }
-  .floating-txt span:nth-child(2) {
-    color: #ffff5c;
-    font-weight: bold;
+  .floating-box > .floating-txt::after {
+    transform: translate(450%, -17%);
   }
-  /* 플로팅 픽스 박스 버튼 */
+}
+
+@media screen and (max-width: 1250px) {
+  .floating-small-img {
+    /* max-width: 180px; */
+
+    top: 22%;
+    left: 16%;
+  }
+  .floating-txt {
+    transform: translateX(14%);
+  }
+  .floating-txt span:first-child > span {
+    display: none;
+  }
+  .floating-box > .floating-txt::after {
+    transform: translate(500%, -20%);
+  }
   .floating-btn {
-    max-width: 200px;
-    width: 200px;
-    height: 58px;
+    max-width: 210px;
+    width: 150px;
+    height: 48px;
     background-color: #ffff5c;
     border-radius: 50px;
     border: none;
-    transform: translateX(-20%);
+    transform: translateX(-5%);
   }
   .floating-btn a {
-    display: block;
-    font-size: 1.25em;
-    color: #b69fff;
-    font-weight: bold;
-    text-align: center;
-    line-height: 58px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-size: 1.2em;
+    line-height: 48px;
   }
-  /* 플로팅 바 요술봉 아이콘 */
-  
   .floating-box > .floating-txt::after {
-    content: "";
-    position: absolute;
-    transform: translate(690%, -20%);
-    width: 2.4444444444rem;
-    height: 2.8333333333rem;
-    background: url(../images/floating-stick-icon.png) no-repeat 0 0 / 100% auto;
-    bottom: 100%;
-    left: 100%;
-    margin-left: 1rem;
-    z-index: 1;
-    pointer-events: none;
+    display: none;
   }
-  
-  /* 픽스바 반응형 */
-  
-  @media screen and (max-width: 1450px) {
-    .floating-txt {
-      font-size: 17px;
-      /* transform: translateX(-19%); */
-    }
+}
+@media screen and (max-width: 1050px) {
+  .floating-txt span:first-child {
+    display: none;
   }
-  
-  @media screen and (max-width: 1200px) {
-    .floating-txt {
-      transform: translateX(-12%);
-    }
-    .floating-box > .floating-txt::after {
-      transform: translate(500%, -20%);
-    }
+  .floating-btn {
+    width: 150px;
+    height: 40px;
   }
-  @media screen and (max-width: 1050px) {
-    .floating-txt span:first-child {
+  .floating-btn a {
+    line-height: 40px;
+  }
+  .floating-box > .floating-txt::after {
+    transform: translate(400%, -20%);
+  }
+  @media screen and (max-width: 800px) {
+    .floating-box {
       display: none;
     }
-    .floating-btn {
-      width: 150px;
-      height: 40px;
+
+    .floating-txt {
+      display: none;
     }
-    .floating-btn a {
-      line-height: 40px;
-    }
-    .floating-box > .floating-txt::after {
-      transform: translate(400%, -20%);
-    }
-    @media screen and (max-width: 800px) {
-      .floating-box {
-        max-width: 700px;
-        max-height: 75px;
-        justify-content: center;
-        gap: 10%;
-      }
-  
-      .floating-txt {
-        display: none;
-      }
-    }
-    /* 노트북에서 이미지 크기 확인이 안됨
-    할머니 이미지 자체 맥스위드 맥스 하이트 잡기 */
-  
   }
-  
+  /* 노트북에서 이미지 크기 확인이 안됨
+    할머니 이미지 자체 맥스위드 맥스 하이트 잡기 */
+}

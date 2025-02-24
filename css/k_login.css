@@ -21,6 +21,7 @@ a {
 }
 body {
   font-family: "S-CoreDream-3Light";
+  margin: auto;
 }
 .container {
   max-width: 1200px;
@@ -98,7 +99,8 @@ body {
   cursor: pointer;
 }
 .insert-form input {
-  width: 420px;
+  min-width: 230px;
+  width: 65%;
   height: 40px;
   background-color: var(--bg-color-gray);
   border: none;
@@ -122,8 +124,8 @@ iput:placeholder {
   width: 30%;
   position: relative;
   position: absolute;
-  left: 139px;
-  top: 193px;
+  left: 11.5%;
+  bottom: -25%;
   cursor: pointer;
 }
 /* 기본 체크박스 숨기기 */
@@ -157,27 +159,38 @@ iput:placeholder {
 .loginBt,
 .find-info {
   position: relative;
+  cursor: pointer;
+}
+.loginBt {
+  width: 100%;
+  position: relative;
 }
 .login-right-bt {
   display: block;
   background-color: var(--sub2-color);
-  width: 190px;
-  height: 100px;
+  min-width: 162px;
+  min-height: 90px;
+  width: 38%;
+  height: 55%;
   border-radius: 10px;
   border: none;
   position: absolute;
-  top: 10px;
+  top: 4%;
   font-weight: bold;
   color: var(--font-color-white);
   font-size: var(--font-size-M);
+}
+.login-right-bt:hover {
+  background-color: var(--sub3-color);
+  color: var(--font-color-black);
 }
 /* 로그인 상단 - 오른쪽 레이아웃 텍스트  */
 .find-info {
   font-size: 14px;
   font-weight: 0;
   position: absolute;
-  left: 7px;
-  bottom: -83px;
+  left: 3%;
+  bottom: -43%;
 }
 /* 로그인 상단 - 오른쪽 아이디 찾기  */
 .find-info span:first-child::after {
@@ -199,6 +212,8 @@ hr {
   width: 100%;
   color: #efefef;
   margin: 10%;
+  transform: translateX(-12%);
+
   /* opacity: .7; */
 }
 /* sns 활용 로그인 섹션 */
@@ -237,12 +252,13 @@ hr {
   flex-direction: column;
   gap: 120px;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 2.5%;
 }
 /* sns 활용 박스 버튼 공통 스타일 시트*/
 .sns-bt {
-  width: 325px;
-  height: 50px;
+  min-width: 260px;
+  width: 80%;
+  height: 50%;
   text-align: center;
   font-size: var(--font-size-base);
   font-weight: bold;
@@ -254,11 +270,20 @@ hr {
   background-color: none;
   border: 1.5px solid #262627;
 }
+.email-login-bt:hover {
+  background-color: var(--sub2-color);
+  border: none;
+}
+
 /* sns 두번째 버튼 */
 .kakao-login-bt {
   background-color: #fae100;
   border: none;
   position: relative;
+}
+.kakao-login-bt:hover {
+  background-color: #efefef;
+  border: 1.5px solid #262627;
 }
 /* sns 두번재 버튼 안 카카오 아이콘 */
 .kakao-login-bt span {
@@ -283,7 +308,9 @@ hr {
   height: 150px;
   position: relative;
 }
+
 .unkown-bt {
+  width: 28%;
   display: block;
   position: absolute;
   top: 0%;
@@ -293,12 +320,82 @@ hr {
   font-weight: bold;
   background-color: var(--bg-color-gray);
   border: none;
+  cursor: pointer;
+}
+.unkown-bt:hover {
+  border: 1.5px solid #262627;
 }
 /* 에러 텍스트 */
 .error {
-  color: red;
+  color: var(--main-color);
   font-size: 14px;
-  display:inline-block;
-  margin-top: 20px;
-  margin-left: 5px;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+/* 반응형 */
+@media screen and (max-width: 1300px) {
+  .login-bar h1 {
+    font-size: 2.2em;
+  }
+  .login-top-left {
+    margin-left: 4em;
+  }
+  .login-top-left label {
+    font-size: 1em;
+  }
+  .find-info {
+    font-size: 1em;
+    margin-left: 4em;
+  }
+  .login-input-box-right {
+    margin-right: 4em;
+  }
+  .find-info {
+    left: -9%;
+    bottom: -43%;
+    font-size: 0.8em;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .login-bar h1 {
+    font-size: 2.2em;
+  }
+  .login-top-left {
+    margin-left: 4em;
+  }
+  .login-top-left label {
+    font-size: 1em;
+  }
+  .find-info {
+    font-size: 1em;
+    margin-left: 4em;
+  }
+  .login-input-box-right {
+    margin-right: 4em;
+  }
+  .find-info {
+    left: -9%;
+    bottom: -43%;
+    font-size: 0.8em;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+  .login-right-bt {
+    width: 160px;
+    height: 90px;
+  }
+  .sns-join-left p {
+    font-size: 1.1em;
+  }
+  .sns-bt {
+    font-size: 1em;
+  }
+  .kakao-login-bt span {
+    display: none;
+  }
 }

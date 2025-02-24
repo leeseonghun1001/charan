@@ -151,7 +151,10 @@
   line-height: 20px !important;
 }
 /* 수치 크키 변화 */
-#UpText-1 , #UpText-2 , #UpText-3 , #UpText-4{
+#UpText-1,
+#UpText-2,
+#UpText-3,
+#UpText-4 {
   text-align: center;
   font-size: 28px;
 }
@@ -219,6 +222,7 @@
     flex-direction: column;
   }
   .left-text_box {
+    width: 70% !important;
     text-align: center;
     max-height: 250px;
     margin-top: 2rem;
@@ -228,8 +232,8 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) !important;
-    max-height: 180px;
-    width: 80% max-content;
+    max-height: 500px;
+    width: 90% !important;
   }
   .right-detail-box span {
     font-size: 0.8rem;
@@ -240,9 +244,31 @@
     height: 80%;
     gap: 4%;
     max-width: 165px;
+    max-height: 250px;
+  }
+  [class^="detail"] span:last-child {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .right-detail-box {
+    width: 88%;
+    align-items: center;
+  }
+  .right-detail-box li {
     max-height: 180px;
+    gap: 25px;
   }
   [class^="detail"] span:last-child {
     display: none;
+  }
+  .right-detail-box span {
+    font-size: 0.6rem;
+  }
+  .upText {
+    font-size: 0.8em;
+  }
+  .detail p{
+    font-size: 0.9em;
   }
 }
