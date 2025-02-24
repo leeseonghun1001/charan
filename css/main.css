@@ -170,6 +170,10 @@ body {
     border-radius: 50px;
     border: none;
     transform: translateX(-5%);
+  .floating-small-img span {
+    display: block;
+    width: 40%;
+    height: 40%;
   }
 }
 
