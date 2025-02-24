@@ -34,13 +34,13 @@ body {
 }
 .login-bar {
   width: 100%;
-  background-color: aqua;
-  height: 135px;
+  /* background-color: aqua; */
+  height: 140px;
 }
 /* 로그인바 안 로그인 title */
 .login-bar h1 {
   text-align: center;
-  line-height: 135px;
+  line-height: 140px;
   font-size: var(--font-size-Max);
   color: var(--font-color-black);
   font-weight: bold;
@@ -49,33 +49,50 @@ body {
 .login-ineer {
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 /* 로그인메인 */
 /* 로그인 상단 하단 바텀 레이아웃 공통 */
 .login-section {
   position: relative;
-  display: flex;
   width: 100%;
 }
 /* 로그인 상단 레이아웃 */
 .login-input-section {
-  justify-content: space-around;
+  width: 100%;
+  position: relative;
 }
 /* 로그인 상단 - 왼쪽 레이아웃 */
 .login-top-left {
   position: relative;
   margin-top: 80px;
   /* background-color: aqua; */
-  flex: 2;
 }
+
 /* 왼쪽 레이아웃 인풋 폼박스 */
 /* 공통 퐁 적용 css */
 .insert-form {
+  width: 100%;
+  position: relative;
   padding: var(--spacing-L);
+  display: flex;
+  gap: 5%;
 }
+/* 로그인 박스 ul */
+.login-input-box-left {
+  flex: 1;
+  position: relative;
+  display: flex;
+  gap: var(--spacing-XXL);
+  flex-direction: column;
+}
+/* 버튼 들어가있는 ul */
+.login-input-box-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  transform: translateX(28%);
+}
+
 .insert-form label {
   font-weight: 100;
   cursor: pointer;
@@ -101,35 +118,32 @@ iput:placeholder {
   margin-left: 54px;
 }
 /* 아이디 저장하기 */
-.email-store {
+.info-store-box {
   width: 30%;
   position: relative;
   position: absolute;
-  left: 130px;
-  top: 135px;
+  left: 139px;
+  top: 193px;
+  cursor: pointer;
 }
-/* 아이디 저장하기 - 아이콘 */
-.email-store span:first-child {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  display: inline-block;
+/* 기본 체크박스 숨기기 */
+.hidden-checkbox {
+  display: none;
+}
+/* 커스텀 체크박스 스타일 */
+.custom-checkbox {
   width: 20px;
   height: 20px;
-}
-.email-store span:first-child a {
-  width: 100%;
-}
-.email-store span:first-child a img {
-  width: 100%;
+  border: 2px solid #266262;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
 }
 
 /* 아이디 저장하기 - 텍스트 부분 */
-.email-store span:last-child {
-  font-size: 14px;
-  font-weight: 0;
-  line-height: 28px;
-  margin-left: 30px;
+.id-pw-store-txt {
+  font-size: var(--font-size-base);
+  color: var(--font-color-black);
 }
 
 /* 로그인 상단 - 오른쪽 레이아웃 */
@@ -137,18 +151,38 @@ iput:placeholder {
   position: relative;
   margin-top: 80px;
   flex: 1;
+  position: relative;
 }
 /* 로그인 상단 - 오른쪽 레이아웃 버튼 */
-.login-right-bt{
+.loginBt,
+.find-info {
+  position: relative;
+}
+.login-right-bt {
   display: block;
   background-color: var(--sub2-color);
   width: 190px;
   height: 100px;
   border-radius: 10px;
-
-
-
-
+  border: none;
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+  color: var(--font-color-white);
+  font-size: var(--font-size-M);
+}
+/* 로그인 상단 - 오른쪽 레이아웃 텍스트  */
+.find-info {
+  font-size: 14px;
+  font-weight: 0;
+  position: absolute;
+  left: 7px;
+  bottom: -83px;
+}
+/* 로그인 상단 - 오른쪽 아이디 찾기  */
+.find-info span:first-child::after {
+  content: " |";
+  color: var(--font-color-black);
 }
 
 /* 로그인 두번째 상단 */
@@ -160,4 +194,111 @@ iput:placeholder {
   display: flex;
   flex-direction: column;
 }
+/* 구분선 */
+hr {
+  width: 100%;
+  color: #efefef;
+  margin: 10%;
+  /* opacity: .7; */
+}
+/* sns 활용 로그인 섹션 */
+.sns-join-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* sns 활용 박스 왼쪽 */
+.sns-join-left {
+  width: 35%;
+}
+/* sns 활용 박스 왼쪽 텍스트 부분 */
+.sns-join-left {
+  font-size: var(--font-size-base);
+  color: var(--font-color-black);
+}
+.sns-join-left p {
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 35%;
+  color: var(--font-color-black);
+  font-size: var(--font-size-M);
+}
+/* 강조하는 부분 */
+.text-st {
+  font-weight: bold;
+}
 
+/* sns 활용 박스 오른쪽 */
+.sns-join-right {
+  position: relative;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  margin-top: 25px;
+}
+/* sns 활용 박스 버튼 공통 스타일 시트*/
+.sns-bt {
+  width: 325px;
+  height: 50px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 10px;
+}
+/* sns 첫번째 버튼 */
+.email-login-bt {
+  background-color: none;
+  border: 1.5px solid #262627;
+}
+/* sns 두번째 버튼 */
+.kakao-login-bt {
+  background-color: #fae100;
+  border: none;
+  position: relative;
+}
+/* sns 두번재 버튼 안 카카오 아이콘 */
+.kakao-login-bt span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  left: 38px;
+}
+.kakao-login-bt span img {
+  width: 100%;
+}
+/* sns 아이콘 리스트 */
+.sns-list {
+  display: flex;
+  gap: 22px;
+}
+/* 비회원 회원 가입 */
+.unkown-login-section {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.unkown-bt {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--font-color-white);
+  font-weight: bold;
+  background-color: var(--bg-color-gray);
+  border: none;
+}
+/* 에러 텍스트 */
+.error {
+  color: red;
+  font-size: 14px;
+  display:inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+}
