@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- 태그매니저 연결 -->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KM3356P6');</script>
+  <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- seo 엔진 최적화 -->
@@ -18,9 +26,12 @@
     <meta property="og:type" content="website" />
     <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 페이지의 간략한 설명을 제공하는 데 사용 -->
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="charan-eight.vercel.app
+    " />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="images/logo.png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="차란 웹사이트입니다." />
     <!-- 파비콘 연결 -->
@@ -54,9 +65,29 @@
     <script src="js/d_product1.js"></script>
     <script src="js/e_information2.js"></script>
     <script src="js/f_prodcut2.js"></script>
+    <!-- 팝업 js -->
+
     <title>차란</title>
+    <!-- GA 적용 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6R3T6BP5Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G6R3T6BP5Q");
+    </script>
   </head>
+
   <body>
+    <!-- 태그매니저 연결 -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM3356P6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <!-- 모달창 -->
     <!-- 전체 레이아웃 -->
     <div class="wrap">
@@ -66,7 +97,7 @@
         <!-- 상단 탑 -->
         <div class="header-top">
           <div class="logo">
-            <img src="images/logo.png" alt="차란로고" />
+            <a href="index.html"><img src="images/logo.png" alt="차란로고" /></a>
           </div>
           <div class="header-right">
             <!-- 상단 탑 오른쪽 위 -->
@@ -81,7 +112,6 @@
               <!-- 위시/마이페이지/옷장정리신청/장바구니 -->
               <div class="header-icon">
                 <ul class="header-icon-list">
-
                   <li>
                     <a href="#"><img src="images/mb_search.png" alt="search" /></a>
                   </li>
@@ -101,7 +131,7 @@
                     <a href="#"><img src="images/mb_wish.png" alt="모바일 위시" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/mb_menu.png" alt="모바일 메뉴" id="mb-menu"/></a>
+                    <a href="#"><img src="images/mb_menu.png" alt="모바일 메뉴" id="mb-menu" /></a>
                   </li>
                 </ul>
               </div>
@@ -113,7 +143,7 @@
                 <ul id="util-list">
                   <li><a href="login.html">로그인</a></li>
                   <li><a href="#">회원가입</a></li>
-                  <li><a href="#">마이페이지</a></li>
+                  <li><a href="mypage.html">마이페이지</a></li>
                 </ul>
               </div>
             </div>
@@ -317,11 +347,12 @@
               </ul>
             </li>
             <li>
-              <a href="#">마이페이지</a>
+              <a href="mypage.html">마이페이지</a>
               <ul class="depth" id="my-info">
-                <li><a href="#">로그인</a></li>
+                <li><a href="login.html">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">장바구니</a></li>
+                <li><a href="#">옷장정리</a></li>
                 <li><a href="#">고객센터</a></li>
               </ul>
             </li>
@@ -459,55 +490,67 @@
             <ul class="icons">
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/hat-icon.png" alt="모자" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/hat-icon.png" alt="모자" />
+                    </div>
+                    <span>모자</span>
                   </div>
-                  <span>모자</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/top-icon.png" alt="상의" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/top-icon.png" alt="상의" />
+                    </div>
+                    <span>상의</span>
                   </div>
-                  <span>상의</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/bottom-icon.png" alt="하의" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/bottom-icon.png" alt="하의" />
+                    </div>
+                    <span>하의</span>
                   </div>
-                  <span>하의</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/bag-icon.png" alt="가방" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/bag-icon.png" alt="가방" />
+                    </div>
+                    <span>가방</span>
                   </div>
-                  <span>가방</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/jewely-icon.png" alt="악세서리" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/jewely-icon.png" alt="악세서리" />
+                    </div>
+                    <span>악세서리</span>
                   </div>
-                  <span>악세서리</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <div class="c-icon">
-                    <img src="images/shose-icon.png" alt="신발" />
+                  <div class="c-icon-wrap">
+                    <div class="c-icon">
+                      <img src="images/shose-icon.png" alt="신발" />
+                    </div>
+                    <span>신발</span>
                   </div>
-                  <span>신발</span>
                 </a>
               </li>
             </ul>
@@ -773,7 +816,7 @@
                   <div class="swiper-slide">
                     <img src="images/MD-pick-img12.png" alt="이미지4-12" />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" id="popup-btn">
                     <a href="#"><img src="images/MD-pick-img13.png" alt="이미지4-13" /></a>
                   </div>
                 </div>
@@ -792,7 +835,7 @@
             <div class="news-article">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.chosun.com/economy/smb-venture/2025/01/14/HR2TXVSLEJARXN5PECZI6SRKQY/">
                     <div class="news-image">
                       <img src="images/news-img1.png" alt="뉴스이미지1" />
                       <span>조선경제</span>
@@ -804,7 +847,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.unicornfactory.co.kr/article/2024120310214293062">
                     <div class="news-image">
                       <img src="images/news-img2.png" alt="뉴스이미지2" />
                       <span>이데일리</span>
@@ -867,15 +910,16 @@
             </div>
           </div>
           <div class="new-bottom">
-            <img src="images/news-bottum.png" alt="뉴스마지막이미지">
+            <img src="images/news-bottum.png" alt="뉴스마지막이미지" />
           </div>
         </div>
       </section>
       <!-- footer 영역 -->
       <footer class="footer">
-        <div class="footer_inner">
+        <!-- 하단 왼쪽 영역 -->
+        <div class="footer-left">
           <div class="footer-logo">
-            <img src="images/logo.png" alt="차란로고" />
+            <a href="index.html"><img src="images/logo.png" alt="차란로고" /></a>
           </div>
           <nav class="footer-menu">
             <ul>
@@ -908,6 +952,34 @@
           </div>
           <div class="copyright">
             <p>copyright ⓒ Mine.is.Inc. All rights reserved.</p>
+          </div>
+        </div>
+        <!-- 하단 오른쪽 영역 -->
+        <div class="footer-right">
+          <div class="f-r-wrap">
+            <div class="f-r-left">
+              <p class="charanQ">차란에 궁금함이 있다면?</p>
+              <p class="cs-data">
+                <span>업무시간 : 10:00 - 18:00</span>
+                <span>(점심시간 : 12:00 - 13:00)</span>
+              </p>
+            </div>
+            <div class="f-r-right">
+              <div class="f-icons">
+                <div class="blog">
+                  <a href="#"><img src="images/f_blog.png" alt="블로그" /></a>
+                </div>
+                <div class="insta">
+                  <a href="#"> <img src="images/f_instagram.png" alt="인스타그램" /></a>
+                </div>
+                <div class="youtube">
+                  <a href="3"><img src="images/f_youtube.png" alt="유튜브" /></a>
+                </div>
+              </div>
+              <div class="kakao">
+                <a href="#"><img src="images/f_kakao.png" alt="카카오" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

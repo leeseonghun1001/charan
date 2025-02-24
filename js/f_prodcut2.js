@@ -1,5 +1,5 @@
-window.addEventListener("load" , function(){
-    // 윈도우가 다 읽고 마지막에 읽어줘 라는 명령
+window.addEventListener("load", function () {
+  // 윈도우가 다 읽고 마지막에 읽어줘 라는 명령
   // ↓itemSwiper 코드
   const itemSwiper = new Swiper(".itemSwiper2", {
     // ↑변수 예약 선언문
@@ -27,4 +27,11 @@ window.addEventListener("load" , function(){
       },
     },
   });
-})
+  const popup = document.querySelector("#popup-btn");
+  popup.addEventListener("click", function () {
+    let new1Window = window.open("fineYourStyle.html", "popup", "width=800, height=800, top=0, left=0");
+    if (new1Window == null) {
+      alert("팝업창이 차단되었습니다");
+    }
+  });
+});

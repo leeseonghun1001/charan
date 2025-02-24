@@ -25,7 +25,11 @@
   padding: var(--spacing-M);
   margin-left: var(--spacing-XL);
 }
-.logo img {
+.logo a{
+  width: 100%;
+  display: block;
+}
+.logo a img {
   width: 100%;
 }
 /* 상단 위 - 오른쪽 */

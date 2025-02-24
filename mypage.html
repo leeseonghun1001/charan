@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 파비콘 연결 -->
+    <link rel="stylesheet" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <!-- reset CSS 연결 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Link Swiper's CSS 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- header CSS 연결 -->
+    <link rel="stylesheet" href="css/a1_header.css" />
+    <!-- footer CSS 연결 -->
+    <link rel="stylesheet" href="css/i1_footer.css" />
+    <!-- mypage CSS 연결 -->
+    <link rel="stylesheet" href="css/mypage.css" />
+    <!-- jquery 연결 -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+    <!-- js 연결 -->
+    <!-- 스와이퍼 JS 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- header JS 연결 -->
+    <script src="js/a_header.js"></script>
+    <!-- mypage JS 연결 -->
+    <script src="js/mypage.js"></script>
+    <title>차란 : 마이페이지</title>
+  </head>
+  <body>
+    <!-- 상단 -->
+    <div class="wrap">
+      <header class="header">
+        <!-- 상단 탑 -->
+        <div class="header-top">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="차란로고" /></a>
+          </div>
+          <div class="header-right">
+            <!-- 상단 탑 오른쪽 위 -->
+            <div class="h-r-top">
+              <!-- 검색창 -->
+              <div class="search-bar">
+                <input type="text" id="search-input" placeholder="#차란이 처음이라면?_차란속에서 취향 찾기" />
+                <div class="search-icon">
+                  <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+                </div>
+              </div>
+              <!-- 위시/마이페이지/옷장정리신청/장바구니 -->
+              <div class="header-icon">
+                <ul class="header-icon-list">
+                  <li>
+                    <a href="#"><img src="images/mb_search.png" alt="search" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/wish-icon.png" alt="wish" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mypage-icon.png" alt="마이페이지" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/shopping-icon.png" alt="장바구니" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/apply-icon.png" alt="옷장정리신청" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mb_wish.png" alt="모바일 위시" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/mb_menu.png" alt="모바일 메뉴" id="mb-menu" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 상단 탑 오른쪽 아래 -->
+            <div class="h-r-bottom">
+              <!-- login & mypage -->
+              <div class="util">
+                <ul id="util-list">
+                  <li><a href="login.html">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">마이페이지</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 상단 아래쪽 -->
+
+        <div class="header-bottom">
+          <!-- 로고 및 카테고리 -->
+          <div class="h-categoty">
+            <div class="h-c-text">
+              <a>CATEGORY</a>
+              <img src="images/menu-bar.png" alt="메뉴바" />
+              <!-- snb-depth -->
+              <div class="menu-snb">
+                <!-- depth -->
+                <ul class="snb">
+                  <li>
+                    <a href="#">아우터</a>
+                    <ul class="depth">
+                      <li><a href="#">코트</a></li>
+                      <li><a href="#">점퍼</a></li>
+                      <li><a href="#">패딩</a></li>
+                      <li><a href="#">플리스조끼</a></li>
+                      <li><a href="#">플리스재킷</a></li>
+                      <li><a href="#">무스탕</a></li>
+                      <li><a href="#">트위드재킷</a></li>
+                      <li><a href="#">라이더재킷</a></li>
+                      <li><a href="#">집업</a></li>
+                      <li><a href="#">가디건</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">상의</a>
+                    <ul class="depth">
+                      <li><a href="#">상의 신상</a></li>
+                      <li><a href="#">맨투맨</a></li>
+                      <li><a href="#">후드티</a></li>
+                      <li><a href="#">긴팔티</a></li>
+                      <li><a href="#">셔츠</a></li>
+                      <li><a href="#">니트</a></li>
+                      <li><a href="#">폴라니트</a></li>
+                      <li><a href="#">니트조끼</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">원피스</a>
+                    <ul class="depth">
+                      <li><a href="#">원피스신상</a></li>
+                      <li><a href="#">겨울 원피스</a></li>
+                      <li><a href="#">미니원피스</a></li>
+                      <li><a href="#">미디원피스</a></li>
+                      <li><a href="#">롱원피스</a></li>
+                      <li><a href="#">투피스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">팬츠</a>
+                    <ul class="depth">
+                      <li><a href="#">팬츠 신상</a></li>
+                      <li><a href="#">데님팬츠</a></li>
+                      <li><a href="#">캐주얼팬츠</a></li>
+                      <li><a href="#">트레이닝팬츠</a></li>
+                      <li><a href="#">조거팬츠</a></li>
+                      <li><a href="#">레깅스</a></li>
+                      <li><a href="#">슬랙스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">스커트</a>
+                    <ul class="depth">
+                      <li><a href="#">스커트 신상</a></li>
+                      <li><a href="#">겨울스커트</a></li>
+                      <li><a href="#">미니스커트</a></li>
+                      <li><a href="#">미디스커트</a></li>
+                      <li><a href="#">롱스커트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">가방</a>
+                    <ul class="depth">
+                      <li><a href="#">가방 신상</a></li>
+                      <li><a href="#">숄더백</a></li>
+                      <li><a href="#">핸드백</a></li>
+                      <li><a href="#">백팩</a></li>
+                      <li><a href="#">지갑</a></li>
+                      <li><a href="#">기타 지갑</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">패션소품</a>
+                    <ul class="depth">
+                      <li><a href="#">소품 신상</a></li>
+                      <li><a href="#">모자</a></li>
+                      <li><a href="#">머플러</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="# 차란속에서 취향 찾기" />
+            <div class="search-icon">
+              <a href="#"><img src="images/search_icon.png" alt="검색" /></a>
+            </div>
+          </div>
+          <!-- 배너 위 메뉴 -->
+          <nav class="menu">
+            <ul class="gnb">
+              <li><a href="#">신규혜택</a></li>
+              <li><a href="#">NEW</a></li>
+              <li><a href="#">택포함</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">#취향찾기</a></li>
+              <li><a href="#">♥옷장정리</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mb-menu-snb">
+          <!-- depth -->
+          <ul class="snb">
+            <li>
+              <a href="#">아우터</a>
+              <ul class="depth">
+                <li><a href="#">코트</a></li>
+                <li><a href="#">점퍼</a></li>
+                <li><a href="#">패딩</a></li>
+                <li><a href="#">플리스조끼</a></li>
+                <li><a href="#">플리스재킷</a></li>
+                <li><a href="#">무스탕</a></li>
+                <li><a href="#">트위드재킷</a></li>
+                <li><a href="#">라이더재킷</a></li>
+                <li><a href="#">집업</a></li>
+                <li><a href="#">가디건</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상의</a>
+              <ul class="depth">
+                <li><a href="#">상의 신상</a></li>
+                <li><a href="#">맨투맨</a></li>
+                <li><a href="#">후드티</a></li>
+                <li><a href="#">긴팔티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+                <li><a href="#">폴라니트</a></li>
+                <li><a href="#">니트조끼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">원피스</a>
+              <ul class="depth">
+                <li><a href="#">원피스신상</a></li>
+                <li><a href="#">겨울 원피스</a></li>
+                <li><a href="#">미니원피스</a></li>
+                <li><a href="#">미디원피스</a></li>
+                <li><a href="#">롱원피스</a></li>
+                <li><a href="#">투피스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="depth">
+                <li><a href="#">팬츠 신상</a></li>
+                <li><a href="#">데님팬츠</a></li>
+                <li><a href="#">캐주얼팬츠</a></li>
+                <li><a href="#">트레이닝팬츠</a></li>
+                <li><a href="#">조거팬츠</a></li>
+                <li><a href="#">레깅스</a></li>
+                <li><a href="#">슬랙스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스커트</a>
+              <ul class="depth">
+                <li><a href="#">스커트 신상</a></li>
+                <li><a href="#">겨울스커트</a></li>
+                <li><a href="#">미니스커트</a></li>
+                <li><a href="#">미디스커트</a></li>
+                <li><a href="#">롱스커트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">가방</a>
+              <ul class="depth">
+                <li><a href="#">가방 신상</a></li>
+                <li><a href="#">숄더백</a></li>
+                <li><a href="#">핸드백</a></li>
+                <li><a href="#">백팩</a></li>
+                <li><a href="#">지갑</a></li>
+                <li><a href="#">기타 지갑</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">패션소품</a>
+              <ul class="depth">
+                <li><a href="#">소품 신상</a></li>
+                <li><a href="#">모자</a></li>
+                <li><a href="#">머플러</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">마이페이지</a>
+              <ul class="depth" id="my-info">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">옷장정리</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main_inner container">
+          <!-- 프로필 -->
+
+          <section class="frofile">
+            <div class="my-frof">
+              <div class="fro-pic">
+                <img src="images/my-frofile-img.png" alt="프로필 사진" />
+              </div>
+              <div class="my-info">
+                <p>umgwwxta</p>
+                <p>******@google.com</p>
+              </div>
+            </div>
+            <div class="edit">
+              <button>프로필편집</button>
+            </div>
+          </section>
+          <!-- 아이템 -->
+          <section class="item">
+            <ul class="item-list">
+              <li>
+                <div class="item-icon">
+                  <img src="images/rank.png" alt="판매자등급" />
+                </div>
+                <span>판매자등급</span>
+              </li>
+              <li>
+                <div class="item-icon">
+                  <img src="images/point.png" alt="포인트" />
+                </div>
+                <span>포인트</span>
+              </li>
+              <li>
+                <div class="item-icon">
+                  <div class="m"></div>
+                  <img src="images/coupon.png" alt="쿠폰" />
+                </div>
+                <span>쿠폰</span>
+              </li>
+              <li>
+                <div class="item-icon">
+                  <img src="images/friend.png" alt="친구초대" />
+                </div>
+                <span>친구초대</span>
+              </li>
+              <li>
+                <div class="item-icon">
+                  <img src="images/notice.png" alt="공지사항" />
+                </div>
+                <span>공지사항</span>
+              </li>
+            </ul>
+          </section>
+          <!-- 구매내역 -->
+          <section class="buy-history">
+            <h2>구매 내역</h2>
+            <ul>
+              <li>
+                <span>전체</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>주문완료</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>배송준비중</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>배송중</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>배송완료</span>
+                <span>0</span>
+              </li>
+            </ul>
+          </section>
+          <!-- 옷장정리신청 내역 -->
+          <section class="apply-history">
+            <h2>옷장정리신청 내역</h2>
+            <ul>
+              <li>
+                <span>전체</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>신청완료</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>의류수거중</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>검수중</span>
+                <span>0</span>
+              </li>
+              <li>
+                <span>등록완료</span>
+                <span>0</span>
+              </li>
+            </ul>
+          </section>
+          <!-- 관심상품 리스트 -->
+          <section class="interest">
+            <div class="interest_inner container">
+              <h2>나의 관심상품</h2>
+              <div class="swiper itrest-list">
+                <div class="swiper-wrapper">
+                  <!-- 관심상품 1 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img6.png" alt="관심상품리스트1" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 서브배너 2 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img4.png" alt="관심상품리스트2" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 서브배너 3 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img7.png" alt="관심상품리스트3" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 서브배너 4 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img12.png" alt="관심상품리스트4" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 서브배너 5 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img2.png" alt="관심상품리스트5" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 서브배너 6 -->
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img9.png" alt="관심상품리스트6" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img11.png" alt="관심상품리스트7" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img10.png" alt="관심상품리스트8" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/MD-pick-img5.png" alt="관심상품리스트9" />
+                    <div class="banner_txt">
+                      <p>
+                        <!-- 내용 없음 -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- 하단 -->
+      <footer class="footer">
+        <!-- 하단 왼쪽 영역 -->
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="index.html"><img src="images/logo.png" alt="차란로고" /></a>
+          </div>
+          <nav class="footer-menu">
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">서비스 이용약관</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+            </ul>
+          </nav>
+          <div class="footer-info">
+            <p class="info-text1">
+              <span>대표자 : 김혜성</span>
+              <span>법인명(상호) : 마인이스 주식회사(Mine.si.lnc)</span>
+            </p>
+            <p class="info-text2">
+              <span>사업자등록번호 : 165-86-02594</span>
+              <span>통신판매업 신고번호 : 제2022-서울성동-00830호</span>
+            </p>
+            <p class="info-text3">
+              <span>주소 : 서울특별시 성동구 성수이로 108, 3층</span>
+              <span>(성수동 2가, 보성빌딩)</span>
+            </p>
+            <p class="info-text4">
+              <span>이메일 : support@mineis.il</span>
+              <span>문의전화 : 02-6013-2201</span>
+            </p>
+            <p class="info-text5">
+              <span>개인정보관리책임자 : 최민기</span>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>copyright ⓒ Mine.is.Inc. All rights reserved.</p>
+          </div>
+        </div>
+        <!-- 하단 오른쪽 영역 -->
+        <div class="footer-right">
+          <div class="f-r-wrap">
+            <div class="f-r-left">
+              <p class="charanQ">차란에 궁금함이 있다면?</p>
+              <p class="cs-data">
+                <span>업무시간 : 10:00 - 18:00</span>
+                <span>(점심시간 : 12:00 - 13:00)</span>
+              </p>
+            </div>
+            <div class="f-r-right">
+              <div class="f-icons">
+                <div class="blog">
+                  <a href="#"><img src="images/f_blog.png" alt="블로그" /></a>
+                </div>
+                <div class="insta">
+                  <a href="#"> <img src="images/f_instagram.png" alt="인스타그램" /></a>
+                </div>
+                <div class="youtube">
+                  <a href="3"><img src="images/f_youtube.png" alt="유튜브" /></a>
+                </div>
+              </div>
+              <div class="kakao">
+                <a href="#"><img src="images/f_kakao.png" alt="카카오" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
