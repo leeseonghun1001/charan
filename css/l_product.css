@@ -94,7 +94,7 @@ body {
 
 .vertical-hr {
   width: 1px;
-  height: 770px;
+  height: 720px;
   background-color: #efefef;
   border: none;
 }
@@ -144,6 +144,7 @@ body {
   border-radius: 10px;
   width: 35%;
   text-align: center;
+  cursor: pointer;
 }
 /* 버튼 */
 .pro-btn-box {
@@ -152,6 +153,7 @@ body {
   width: 100%;
   margin: auto;
   margin-top: 40px;
+  cursor: pointer;
 }
 .pro-btn-box .buy {
   font-family: "S-CoreDream-7ExtraBold";

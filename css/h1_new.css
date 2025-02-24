@@ -49,6 +49,9 @@
     text-align: right;
     color: var(--main-color)
 }
+.news-article ul li:hover .news-title{
+    text-decoration: underline;
+}
 .new-bottom img{
     width: 100%;
     display: block;
