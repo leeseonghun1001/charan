@@ -10,8 +10,14 @@
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="manifest" href="assets/site.webmanifest" />
+    <!-- reset CSS 연결 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- css -->
     <link rel="stylesheet" href="css/l_product.css" />
     <link rel="stylesheet" href="css/a1_header.css" />
+    <!-- jquery 연결 -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
     <title>차란 - 상품 상세페이지</title>
   </head>
   <body>
@@ -174,71 +180,91 @@
 
     <!-- 상세페이지 -->
     <div class="product-wrap">
-        <!-- 왼쪽 이미지 영역 -->
+      <!-- 왼쪽 이미지 영역 -->
       <div class="product-image-box">
         <div class="pro-image-top">
           <img src="images/product-image1.png" alt="상품설명이미지1" />
         </div>
         <div class="pro-image-bottom">
-            <p class="bold">상품 상태</p>
-            <div class="pro-image-bottom-sub">
-                <p class="bold very-good">Very-good</p>
-                <span>착용 횟수가 많지 않고, 잘 관리한 아이템이에요. 아주 좋은 상태로 볼 수 있지만,
-                    착용 시 생기는 미세한 사용감이 있어요.</span>
-            </div>
+          <p class="bold product-quality">상품 상태</p>
+          <div class="pro-image-bottom-sub">
+            <p class="bold very-good">Very-good</p>
+            <span
+              >착용 횟수가 많지 않고, 잘 관리한 아이템이에요. 아주 좋은 상태로 볼 수 있지만, 착용 시 생기는 미세한
+              사용감이 있어요.</span
+            >
+          </div>
         </div>
       </div>
+      <!-- 가운데 border -->
+      <div class="vertical-hr"></div>
       <!-- 오른쪽 가격 영역 -->
       <div class="product-price-box">
         <!-- 오른쪽 가격 영역 탑 -->
         <div class="pro-price-top">
-            <!-- 타이틀 -->
-            <h1>Brandy Melville Knit Sweater with American Flag Cream</h1>
-            <h2>브랜드 멜빌 아메리칸 플러그 니트 스웨터 크림</h2>
-            <!-- 가격 -->
-            <div class="pro-num-box">
-                <p>224,500</p>
-                <div class="pro-num-flex">
-                    <span class="price-per">64%</span>
-                    <span>80,000</span>
-                    <span class="coupon">쿠폰받기</span>
-                </div>
+          <!-- 타이틀 -->
+          <h1>Brandy Melville Knit Sweater with American Flag Cream</h1>
+          <h2>브랜드 멜빌 아메리칸 플러그 니트 스웨터 크림</h2>
+          <!-- 가격 -->
+          <div class="pro-num-box">
+            <p>224,500</p>
+            <div class="pro-num-flex">
+                <span class="price-per">64%</span>
+                <span class="consumer-price">80,000</span>
+              <span class="coupon">쿠폰받기</span>
             </div>
-            <!-- 버튼 -->
-            <div class="pro-btn-box">
-                <sapn class="buy">구매</sapn>
-                <span class="sell">판매</span>
-                <p class="heart"><img src="images/wish-icon.png" alt="하트아이콘">관심상품 268</p>
+          </div>
+          <!-- 버튼 -->
+          <div class="pro-btn-box">
+            <div class="pro-btn-buy-sell">
+              <sapn class="buy">구매</sapn>
+              <span class="sell">판매</span>
             </div>
+            <div class="pro-btn-wish">
+              <img src="images/wish-icon.png" alt="하트아이콘" class="heart" />
+              <span>관심상품 268</span>
+            </div>
+          </div>
+
+          <div class="order-bottom-txt">
             <!-- 배송정보 -->
             <div class="pro-delivery-box">
-                <p class="bold">배송정보</p>
-                <p class="delivery-top">
-                    <span class="bold">배송비</span>
-                    <span>무료배송</span>
-                </p>
-                <p class="delivery-bottom">
-                    <span class="bold">출고 정보</span>
-                    <span>검수 후 배송 / 5-7일 내 도착 예상</span>
-                </p>
+              <p class="extra-bold">배송정보</p>
+              <div class="pro-delivery">
+                <div class="delivery-1">
+                  <p class="bold">배송비</p>
+                  <span>무료배송</span>
+                </div>
+                <div class="delivery-2">
+                  <p class="bold">출고 정보</p>
+                  <span>검수 후 배송 / 5-7일 내 도착 예상</span>
+                </div>
+              </div>
             </div>
-        </div>
-        <!-- 오른쪽 가격 영역 바텀 - 그 외 정보 -->
-        <div class="pro-price-bottom">
-            <p>
-                <span class="bold">100% 정품 보증</span>
+            <!-- 오른쪽 가격 영역 바텀 - 그 외 정보 -->
+            <div class="pro-price-bottom">
+              <div class="etc1">
+                <p class="bold">100% 정품 보증</p>
                 <span>CHARAN에서 검수한 상품이 정품이 아닐 경우, 구매가의 3배를 보상합니다.</span>
-            </p>
-            <p>
-                <span class="bold">엄격한 다중 검수</span>
-                <span>모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룸의 체계적인 시스템을 거쳐 검수를 진행합니다.</span>
-            </p>
-            <p>
-                <span class="bold">정품 인증 패키지</span>
+              </div>
+              <div class="etc2">
+                <p class="bold">엄격한 다중 검수</p>
+                <span
+                  >모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룸의 체계적인 시스템을 거쳐 검수를 진행합니다.</span
+                >
+              </div>
+              <div class="etc3">
+                <p class="bold">정품 인증 패키지</p>
                 <span>검수에 합격한 경우에 한하여 CHARAN의 정품 인증 패키지가 포함된 상품이 배송됩니다.</span>
-            </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="product-list-image">
+      <img src="images/product-list-image.png" alt="상품리스트이미지">
+    </div>
+
   </body>
 </html>

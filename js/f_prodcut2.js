@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
     //   delay: 1500,
     //   disableOnInteraction: false,
     // },
-    slidesPerView: 4.5,
+    slidesPerView: 2.5,
     // 첫 화면에 이미지 몇 개 보여줄래
     spaceBetween: 20,
     breakpoints: {
