@@ -136,6 +136,8 @@
 [class^="detail"] * {
   /* display: block;
   padding: 5px; */
+  min-width: 110px;
+  ;
 }
 [class^="detail"] figure {
   width: 60%;
@@ -241,7 +243,7 @@
 
   .right-detail-box li {
     justify-content: normal;
-    height: 80%;
+    height: 72%;
     gap: 4%;
     max-width: 165px;
     max-height: 250px;
@@ -256,8 +258,8 @@
     align-items: center;
   }
   .right-detail-box li {
-    max-height: 180px;
-    gap: 25px;
+    min-height: 180px;
+    gap: 20px;
   }
   [class^="detail"] span:last-child {
     display: none;
@@ -270,5 +272,9 @@
   }
   .detail p{
     font-size: 0.9em;
+  }
+  [class^="detail"] figure {
+    width: 40%;
+    /* margin: auto; */
   }
 }
