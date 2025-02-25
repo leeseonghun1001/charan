@@ -48,6 +48,22 @@
   .banner-right {
     display: none;
     /* gap: 5px; */
+  
+    
+  }
+  /* footer 영역 */
+  .f-r-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 40px;
+    padding-top: 100px;
+    /* bottom: 0; */
+  }
+  .f-r-left{
+    gap: 10px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -56,6 +72,16 @@
     font-size: var(--font-size-S);
   }
   /* visual 영역 */
+}
+@media screen and (max-width: 1000px){
+.footer-left{
+  width: 100%;
+}
+  /* .footer-right{
+    display: none;
+    width: 0%;
+  } */
+
 }
 @media screen and (max-width: 950px) {
   /* header 영역 */
@@ -77,6 +103,18 @@
     width: 75%;
     /* information1 영역 */
   }
+  /* footer 영역 */
+  .footer-menu ul li{
+    border: none;
+  }
+  .footer-menu ul li a{
+    padding-right: var(--spacing-M);
+  }
+  .f-r-wrap{
+    flex-direction: column;
+    justify-content: unset;
+  }
+  
 }
 @media screen and (max-width: 768px) {
   /* header 영역 */
@@ -106,6 +144,10 @@
     margin-right: var(--spacing-XL);
     /* width: 50%; */
   }
+  #search-input{
+    padding-left: var(--spacing-M);
+  }
+  .searc
   .h_categoty {
     /* display: flex; */
     /* justify-content: space-between; */
@@ -185,11 +227,23 @@
   /* product2 영역 */
   /* news 영역 */
   /* footer 영역 */
+  .footer-menu ul li{
+    border-right: 1px solid rgba(38, 38, 39, .2);
+  }
+  .footer-menu ul li a{
+    padding-right: var(--spacing-M);
+  }
+  .footer-right{
+    display: none;
+  }
 }
 @media screen and (max-width: 550px){
+  #util-list li a{
+    font-size: 11px;
+  }
   /* footer 영역 */
   .footer-menu ul{
-    gap: 10px;
+    gap: 7px;
   }
   .info-text2{
     display: flex;
@@ -201,9 +255,13 @@
     flex-direction: column;
     gap: 5px;
   }
+  .footer-menu ul li{
+    border: none;
+  }
   .footer-menu ul li a{
     display: block;
     padding: 0 5px;
+    font-size: 11px;
     
   }
 }
@@ -307,5 +365,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .footer-menu ul li{
+    border-right: 1px solid rgba(38, 38, 39, .2);
   }
 }
