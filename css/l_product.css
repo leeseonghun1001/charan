@@ -89,7 +89,7 @@ body {
 }
 .very-good {
   width: 30%;
-  font-family: "S-CoreDream-5Medium";
+  
 }
 
 .vertical-hr {
@@ -108,10 +108,13 @@ body {
   font-size: var(--font-size-M);
   margin-bottom: 3px;
   color: var(--font-color-black);
+  font-family: "S-CoreDream-5Medium";
+  margin-bottom: var(--spacing-M);
 }
 .pro-price-top h2 {
   font-size: var(--font-size-base);
   color: var(--font-color-black);
+  font-family: "S-CoreDream-5Medium";
 }
 /* 가격 */
 .pro-num-box > p {
