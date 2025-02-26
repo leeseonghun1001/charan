@@ -36,6 +36,11 @@ a {
 }
 body {
   font-family: "S-CoreDream-3Light";
+  position: relative;
+  /* cursor: none !important; */
+}
+.wrap {
+  position: relative;
 }
 .container {
   max-width: 1200px;
@@ -43,6 +48,9 @@ body {
 }
 /* 픽스 바 스타일 시트 */
 /* 플로팅 박스 */
+.floating {
+  display: none;
+}
 .floating-box {
   width: 80%;
   height: 10%;
@@ -170,12 +178,14 @@ body {
     border-radius: 50px;
     border: none;
     transform: translateX(-5%);
-  .floating-small-img span {
-    display: block;
-    width: 40%;
-    height: 40%;
+    .floating-small-img span {
+      display: block;
+      width: 40%;
+      height: 40%;
+    }
   }
 }
+/* 픽스바 반응형 */
 
 @media screen and (max-width: 1450px) {
   .floatinf-img img {
@@ -238,15 +248,35 @@ body {
   .floating-box > .floating-txt::after {
     transform: translate(400%, -20%);
   }
-  @media screen and (max-width: 800px) {
-    .floating-box {
-      display: none;
-    }
-
-    .floating-txt {
-      display: none;
-    }
+}
+@media screen and (max-width: 800px) {
+  .floating-box {
+    display: none;
   }
-  /* 노트북에서 이미지 크기 확인이 안됨
-    할머니 이미지 자체 맥스위드 맥스 하이트 잡기 */
+
+  .floating-txt {
+    display: none;
+  }
+}
+/* 마우스 포인터 */
+#mouse-pointer {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 15%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  
+  z-index: 99999999;
+  /* 뒷배경도 클릭 할수 있음 */
+  pointer-events: none;
+  background: url(../images/floating-stick-icon.png) no-repeat center;
+  background-size: contain;
+  transition: all 0.3s;
+}
+#mouse-pointer.hover {
+  transform: scale(1.5);
+  mix-blend-mode: normal;
+
 }

@@ -49,6 +49,29 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="manifest" href="assets/site.webmanifest" />
     <!-- CSS 연결 -->
+       <!-- sns css 연결 -->
+    <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+  />
+  <link rel="stylesheet" href="css/sns.css" />
+
     <!-- reset CSS 연결 -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- AOS CSS 연결 -->
@@ -72,6 +95,7 @@
     <script src="js/d_product1.js"></script>
     <script src="js/e_information2.js"></script>
     <script src="js/f_prodcut2.js"></script>
+    <script src="js/mouse.js"></script>
     <!-- 팝업 js -->
 
     <title>차란</title>
@@ -100,9 +124,12 @@
         style="display: none; visibility: hidden"></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <!-- 모달창 -->
     <!-- 전체 레이아웃 -->
     <div class="wrap">
+      <!-- 마우스 포인터 -->
+      <div id="mouse-pointer"></div>
       <!-- 상단 -->
       <!-- 하단 고정 픽스  -->
       <div class="floating">
@@ -121,7 +148,7 @@
             </p>
             <!-- 픽스 바 안 텍스트 -->
             <p class="floating-txt">
-              <span><span>에서</span>구독하고 첫 달</span>
+              <span><span></span>구독하고 첫 달</span>
               <span>럭키박스 무료</span>
               <span>로 받아보세요.</span>
             </p>
@@ -1001,6 +1028,107 @@
               </ul>
             </div>
           </div>
+                      <!-- sns영역 -->
+                      <div class="sns-container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div id="testimonial-slider" class="owl-carousel">
+                              <div class="testimonial">
+                                <div class="pic">
+                                  <img src="images/sns-icon.png" />
+                                </div>
+                                <div class="top">
+                                  <p class="shorts">
+                                    <video src="assets/charan_video_1.mp4" autoplay muted loop></video>
+                                  </p>
+                                </div>
+                
+                                <h3 class="title">💕연지'S ClOSET</h3>
+                                <small class="post">새내기 연지의 옷장을 채워보자!</small>
+                              </div>
+                
+                              <div class="testimonial">
+                                <div class="pic">
+                                  <img src="images/sns-icon.png" />
+                                </div>
+                                <div class="top">
+                                  <p class="shorts">
+                                    <video src="assets/charan_video_2.mp4" autoplay muted loop></video>
+                                  </p>
+                                </div>
+                
+                                <h3 class="title">✨루피타의 CLOSET</h3>
+                                <small class="post">직장인 루피타의 꾸안꾸 데일리룩!</small>
+                              </div>
+                
+                              <div class="testimonial">
+                                <div class="pic">
+                                  <img src="images/sns-icon.png" />
+                                </div>
+                                <div class="top">
+                                  <p class="shorts">
+                                    <video src="assets/charan_video_3.mp4" autoplay muted loop></video>
+                                  </p>
+                                </div>
+                
+                                <h3 class="title">😎송하의 CLOSET</h3>
+                                <small class="post">차란에서 HIP만? 놉 CHILL도 가능!</small>
+                              </div>
+                              <div class="testimonial">
+                                <div class="pic">
+                                  <img src="images/sns-icon.png" />
+                                </div>
+                                <div class="top">
+                                  <p class="shorts">
+                                    <video src="assets/charan_video_4.mp4" autoplay muted loop></video>
+                                  </p>
+                                </div>
+                
+                                <h3 class="title">🤦‍♀️아현의 CLOSET</h3>
+                                <small class="post">다양한 프리미엄 브랜드를 이 가격에?</small>
+                              </div>
+                              <div class="testimonial">
+                                <div class="pic">
+                                  <img src="images/sns-icon.png" />
+                                </div>
+                                <div class="top">
+                                  <p class="shorts">
+                                    <video src="assets/charan_video_5.mp4" autoplay muted loop></video>
+                                  </p>
+                                </div>
+                
+                                <h3 class="title">👀민지의 CLOSET</h3>
+                                <small class="post">계획적인 소비습관의 시작은 차란?</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- sns sript -->
+                      <script
+                        type="text/javascript"
+                        src="https://code.jquery.com/jquery-1.12.0.min.js"
+                      ></script>
+                      <script
+                        type="text/javascript"
+                        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+                      ></script>
+                
+                      <script>
+                        $(document).ready(function () {
+                          $("#testimonial-slider").owlCarousel({
+                            items: 2,
+                            itemsDesktop: [1000, 2],
+                            itemsDesktopSmall: [990, 2],
+                            itemsTablet: [768, 1],
+                            pagination: true,
+                            navigation: false,
+                            navigationText: ["", ""],
+                            slideSpeed: 1000,
+                            autoPlay: true,
+                          });
+                        });
+                      </script>
           <div class="new-bottom">
             <img src="images/news-bottum.png" alt="뉴스마지막이미지" />
           </div>
@@ -1009,6 +1137,7 @@
           </div>
         </div>
       </section>
+
       <!-- footer 영역 -->
       <footer class="footer">
         <!-- 하단 왼쪽 영역 -->
