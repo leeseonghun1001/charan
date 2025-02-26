@@ -1,0 +1,126 @@
+body {
+  margin-top: 100px !important;
+}
+.testimonial {
+  border-right: 4px solid #b69fff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  padding: 30px 30px 30px 130px;
+  margin: 0 15px 30px 15px;
+  overflow: hidden;
+  position: relative;
+}
+/* flex */
+.shorts {
+  transform: translateX(-18%);
+}
+
+.testimonial-slider {
+  position: relative;
+}
+
+.testimonial:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -17px;
+  border-top: 25px solid #c495f8;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(-45deg);
+}
+.testimonial:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -17px;
+  border-top: 25px solid #c495f8;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(135deg);
+}
+.testimonial .pic {
+  display: inline-block;
+  width: 17%;
+  height: 17%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -2.2em;
+  left: 1em;
+}
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+.testimonial .description {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.testimonial .title {
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c495f8;
+  margin-top: 1em;
+}
+.testimonial .post {
+  margin-top: 1em;
+  display: inline-block;
+  font-size: 17px;
+  color: #c495f8;
+}
+.owl-theme .owl-controls .owl-page span {
+  border: 2px solid 6630e4;
+  background: #fff !important;
+  border-radius: 0 !important;
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+  background: #c495f8 !important;
+  border-color: #c495f8;
+}
+@media only screen and (max-width: 1200px) {
+  .shorts {
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+    .shorts{
+        width: 60%;
+        transform: translateX(-130%);
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .shorts{
+        transform: translateX(20%);
+    }
+  .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
+  .testimonial .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  }
+}
+@media only screen and (max-width: 490px){
+    .testimonial{
+        min-width: 440px;
+        min-height: 900px;
+    }
+    .shorts .video{
+        transform: translateX(10%);
+   
+    }
+
+}
