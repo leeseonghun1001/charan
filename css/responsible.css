@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and(max-width:1850px) {
+@media screen and (max-width:1850px) {
   /* header 영역 */
   .header-bottom {
     margin-left: 50px;
@@ -147,25 +147,19 @@
   #search-input{
     padding-left: var(--spacing-M);
   }
-  .searc
-  .h_categoty {
-    /* display: flex; */
-    /* justify-content: space-between; */
-  }
   .h-c-text {
     padding-left: var(--spacing-XXXL);
-    /* justify-content: space-between; */
   }
 
   .menu-snb {
     width: 100%;
+    left: 0;
   }
   .snb {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 1000px;
-    /* background-color: antiquewhite; */
   }
   .snb > li {
     display: block;
