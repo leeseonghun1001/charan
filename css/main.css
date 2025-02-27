@@ -45,6 +45,7 @@ body {
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0;
 }
 /* 픽스 바 스타일 시트 */
 /* 플로팅 박스 */
