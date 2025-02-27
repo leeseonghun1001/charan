@@ -137,7 +137,6 @@
   /* display: block;
   padding: 5px; */
   min-width: 110px;
-  ;
 }
 [class^="detail"] figure {
   width: 60%;
@@ -253,11 +252,26 @@
   }
 }
 @media screen and (max-width: 550px) {
+  .information1 {
+    height: 1000px;
+  }
+  .left-text_box {
+    position: relative;
+    width: 30%;
+  }
   .right-detail-box {
     width: 88%;
+    height: 500px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 40%;
   }
+
   .right-detail-box li {
+    width: calc(90% / 2);
+
     min-height: 180px;
     gap: 20px;
   }
@@ -270,11 +284,13 @@
   .upText {
     font-size: 0.8em;
   }
-  .detail p{
+  .detail p {
     font-size: 0.9em;
   }
   [class^="detail"] figure {
     width: 40%;
     /* margin: auto; */
   }
+}
+@media screen and (max-width: 400px) {
 }

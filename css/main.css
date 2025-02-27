@@ -42,7 +42,7 @@ body {
 .wrap {
   position: relative;
 }
-.container {
+.container{
   max-width: 1200px;
   margin: 0 auto;
 }
