@@ -9,6 +9,7 @@ window.addEventListener("load", () => {
       disableOnInteraction: false,
     },
   });
+  // 메인배너와 서브배너 스와이퍼의 시간차
   setTimeout(() => {
     const subSwiper = new Swiper(".sub-banner", {
       slidesPerView: 1,
