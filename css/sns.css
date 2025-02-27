@@ -1,9 +1,18 @@
-body {
-  margin-top: 100px !important;
+.sns-container{
+  margin-top: 10%;
+}
+.row {
+
+  position: relative;
+}
+
+.col-md-12 {
+  position: relative;
 }
 .testimonial {
   border-right: 4px solid #b69fff;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   padding: 30px 30px 30px 130px;
   margin: 0 15px 30px 15px;
   overflow: hidden;
@@ -93,35 +102,117 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
-    .shorts{
-        width: 60%;
-        transform: translateX(-130%);
-    }
+  .testimonial {
+    width: 700px;
+    height: 700px;
+  }
+  .shorts {
+    width: 80%;
+    position: absolute;
+    right: -71px;
+    top: 0;
+  }
+  .video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+  }
+  .testimonial .title {
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c495f8;
+    margin-top: 1em;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+  }
+  .testimonial .post {
+    margin-top: 1em;
+    display: inline-block;
+    font-size: 17px;
+    color: #c495f8;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  .testimonial .pic {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 785px) {
-    .shorts{
-        transform: translateX(20%);
-    }
+@media only screen and (max-width: 725px) {
+  .testimonial {
+    width: 100%;
+  }
+  .shorts {
+    width: 100%;
+    position: absolute;
+    right: -50%;
+    top: -20%;
+  }
   .testimonial {
     padding: 20px;
     text-align: center;
   }
+
   .testimonial .pic {
-    display: block;
-    position: static;
-    margin: 0 auto 15px;
+    display: none;
+  }
+  .testimonial .title {
+    color: #c495f8;
+
+    bottom: 10%;
+    left: 20%;
+  }
+  .testimonial .post {
+    margin-top: 1em;
+    display: inline-block;
+    font-size: 17px;
+    color: ;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+  }
+  .testimonial .pic {
+    display: none;
   }
 }
-@media only screen and (max-width: 490px){
-    .testimonial{
-        min-width: 440px;
-        min-height: 900px;
-    }
-    .shorts .video{
-        transform: translateX(10%);
-   
-    }
-    
+@media only screen and (max-width: 621px) {
+  .testimonial {
+    width: 100%;
+    min-height: 400px;
+  }
+  .shorts {
+    width: 100%;
+    position: absolute;
+    right: -50%;
+    top: -5%;
+  }
+  .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
 
+  .testimonial .pic {
+    display: none;
+  }
+  .testimonial .title {
+    color: #c495f8;
+
+    bottom: 9%;
+    left: 16%;
+  }
+  .testimonial .post {
+    margin-top: 1em;
+    display: inline-block;
+    font-size: 17px;
+    color: ;
+    position: absolute;
+    bottom: 4%;
+    left: 16%;
+  }
 }
