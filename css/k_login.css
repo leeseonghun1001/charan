@@ -67,7 +67,7 @@ body {
 .login-top-left {
   position: relative;
   margin-top: 80px;
-  padding-left: 7%;
+  padding-left: 5%;
   /* background-color: aqua; */
 }
 
@@ -212,8 +212,10 @@ iput:placeholder {
 /* 구분선 */
 hr {
   width: 100%;
-  color: #efefef;
+  height: 1px;
+  background-color: #efefef;
   margin: 10%;
+  border: none;
   transform: translateX(-12%);
 
   /* opacity: .7; */
