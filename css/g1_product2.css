@@ -22,3 +22,6 @@
     color: var(--font-color-gray);
     font-weight: bold;
 }
+.swiper-slide{
+    cursor: pointer;
+}
