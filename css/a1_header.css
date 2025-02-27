@@ -157,10 +157,10 @@
 .menu-snb{
     width: 98%;
     max-width: 1700px;
-    display: block;
+    display: none;
     position: absolute;
     top: 46px;
-    left: -25px;
+    left: 0px;
     z-index: 99;
     
 }
