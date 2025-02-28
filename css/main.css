@@ -281,6 +281,12 @@ body {
   mix-blend-mode: normal;
 
 }
+@media (max-width: 768px) {
+  #mouse-pointer {
+      display: none !important;
+  }
+}
+
 
 /* top 버튼 */
 .top-btn-wrap{

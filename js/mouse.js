@@ -11,12 +11,12 @@ $(document).ready(function () {
     // console.log(moveCursor);
   }
   $clickElements.mouseenter(function () {
-    console.log("마우스들어왔따");
+    //console.log("마우스들어왔따");
     $mousePointer.addClass("hover");
   });
   $clickElements.mouseleave(function () {
     console.log("마우스들어왔따");
-    $mousePointer.removeClass("hover");
+    //$mousePointer.removeClass("hover");
   });
   //윈도우를 켰을때 mousemove 해라 뒤엔는 함수
   $(window).on("mousemove", moveCursor);

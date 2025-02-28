@@ -403,3 +403,54 @@ hr {
     display: none;
   }
 }
+@media screen and (max-width: 930px) {
+  .top-form {
+    flex-direction: column;
+  }
+  .email-li {
+    padding-bottom: 10%;
+  }
+  #user-email-error {
+    transform: translate(-140%, 350%);
+  }
+  #user-psword-error {
+    transform: translate(13%, 12%);
+  }
+  #email-insert,
+  #pw-insert {
+    width: 30%;
+  }
+  .find-info {
+    transform: translate(-106%, -317%);
+  }
+
+  .loginBt {
+    transform: translate(46%, -180%);
+    height: 100px;
+  }
+  .info-store-box {
+    left: 33.5%;
+    bottom: 3%;
+  }
+  .login-top-left label {
+    font-size: 0.8em;
+  }
+  .sns-join-left p {
+    font-size: 1em;
+  }
+  .sns-bt {
+    min-width: 220px;
+    font-size: 0.8em;
+  }
+  .email-login-bt {
+    transform: translateY(100%);
+  }
+  .sns-list{
+    transform: translate(-55%, -29%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .login-input-box-left{
+   transform: translate(0 , 0);
+  }
+}
