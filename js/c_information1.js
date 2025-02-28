@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
           counter.textContent = "0";
   
           // 목표 숫자 가져오기 (data-target 속성값)
+          
           const targetNum = +counter.getAttribute("data-target");
           const duration = 1000; // 2초 동안 애니메이션 실행
           const frameRate = 60; // 초당 60 프레임
