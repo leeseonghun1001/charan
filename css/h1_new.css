@@ -33,12 +33,12 @@
   flex-direction: column;
   gap: var(--spacing-XL);
   font-weight: bold;
+  height: 45px;
+  overflow: hidden;
 }
 .news-text p {
   color: var(--font-color-black);
   line-height: 1.5;
-  height: 45px;
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
