@@ -34,4 +34,16 @@ window.addEventListener("load", function () {
       alert("팝업창이 차단되었습니다");
     }
   });
+
+  const popup2 = this.document.querySelector(".shop-btn")
+  popup2.addEventListener("click" , function(){
+    let new1Window = window.open("fineYourStyle.html", "popup", "width=800, height=1100, top=0, left=0");
+    if (new1Window == null) {
+      alert("팝업창이 차단되었습니다");
+      popup2.style.color = "#fff"
+    }
+    else{
+      popup2.style.color = "#fff"
+    }
+  })
 });
